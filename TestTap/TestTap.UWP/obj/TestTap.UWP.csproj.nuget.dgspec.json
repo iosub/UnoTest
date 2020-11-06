@@ -58,6 +58,14 @@
               "target": "Package",
               "version": "[2.0.0, )"
             },
+            "Uno.Microsoft.Toolkit.Uwp": {
+              "target": "Package",
+              "version": "[6.1.0-build.191.gc988bdd4ff, )"
+            },
+            "Uno.Microsoft.Toolkit.Uwp.UI.Controls": {
+              "target": "Package",
+              "version": "[6.1.0-build.191.gc988bdd4ff, )"
+            },
             "Uno.UI": {
               "target": "Package",
               "version": "[3.2.0-dev.441, )"

@@ -41,9 +41,11 @@ namespace TestTap.Shared.ViewModel
             {
                 TestList.Add(new TestModel 
                 { Id = i ,
-                    UpdateCommand = new DelegateCommand<TestModel>(OnUpdateTarea)
+                    UpdateCommand = new DelegateCommand<TestModel>(OnUpdateTarea),
+                    DeleteCommand = new DelegateCommand<TestModel>(OnDeleteTarea)
 
-            });
+
+                });
             }
            
         }
@@ -51,6 +53,10 @@ namespace TestTap.Shared.ViewModel
         private void OnUpdateTarea(TestModel obj)
         {
             TestValue = TestValue + 1;
+        }
+        private void OnDeleteTarea(TestModel obj)
+        {
+            TestValue = TestValue -1;
         }
     }
 }

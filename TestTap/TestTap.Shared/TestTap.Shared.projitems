@@ -30,6 +30,9 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Data\TestModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UserControls\TestUserControl.xaml.cs">
+      <DependentUpon>TestUserControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\TestViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Views\TestViewPivot.xaml.cs">
       <DependentUpon>TestViewPivot.xaml</DependentUpon>
@@ -37,6 +40,10 @@
   </ItemGroup>
   <ItemGroup>
     <Page Include="$(MSBuildThisFileDirectory)MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)UserControls\TestUserControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -2,17 +2,17 @@
     x:Class="TestTap.Shared.Views.TestViewPivot"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:TestTap.Shared.Views"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="using:TestTap.Shared.Views"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    mc:Ignorable="d">
 
     <Page.Resources>
         <DataTemplate x:Key="ListViewItemTemplate1">
             <StackPanel>
                 <TextBlock Text="{Binding Id}" />
-                <Button Command="{Binding UpdateCommand}" Content="ClickMe"/>
+                <Button Command="{Binding UpdateCommand}" Content="ClickMe" />
             </StackPanel>
 
         </DataTemplate>
@@ -25,9 +25,8 @@
         </Grid.RowDefinitions>
         <TextBlock
             Grid.Row="0"
-            
             FontSize="30"
-            Text="{x:Bind ViewModel.TestValue,Mode=OneWay}" />
+            Text="{x:Bind ViewModel.TestValue, Mode=OneWay}" />
         <ListView
             x:Name="ListUx"
             Grid.Row="1"

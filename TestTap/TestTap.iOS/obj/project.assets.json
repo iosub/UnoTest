@@ -480,7 +480,7 @@
           "lib/xamarinios10/_._": {}
         }
       },
-      "System.Runtime.CompilerServices.Unsafe/4.5.2": {
+      "System.Runtime.CompilerServices.Unsafe/4.7.1": {
         "type": "package",
         "compile": {
           "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
@@ -695,6 +695,31 @@
           "lib/xamarinios10/_._": {}
         }
       },
+      "Uno.ColorCode.Core/2.0.8-gd42a883502": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Drawing.Common.dll"
+        ],
+        "compile": {
+          "lib/xamarinios10/ColorCode.Core.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/ColorCode.Core.dll": {}
+        }
+      },
+      "Uno.ColorCode.UWP/2.0.8-gd42a883502": {
+        "type": "package",
+        "dependencies": {
+          "Uno.ColorCode.Core": "2.0.8-gd42a883502",
+          "Uno.UI": "3.0.0-dev.899"
+        },
+        "compile": {
+          "lib/xamarinios10/ColorCode.UWP.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/ColorCode.UWP.dll": {}
+        }
+      },
       "Uno.Core/2.0.0": {
         "type": "package",
         "dependencies": {
@@ -728,6 +753,113 @@
         },
         "runtime": {
           "lib/netstandard2.0/Uno.Diagnostics.Eventing.dll": {}
+        }
+      },
+      "Uno.Microsoft.Toolkit/6.1.0-build.191.gc988bdd4ff": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.7.1"
+        },
+        "compile": {
+          "lib/netstandard2.1/Microsoft.Toolkit.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.Toolkit.dll": {}
+        }
+      },
+      "Uno.Microsoft.Toolkit.Parsers/6.1.0-build.191.gc988bdd4ff": {
+        "type": "package",
+        "dependencies": {
+          "Uno.Microsoft.Toolkit": "6.1.0-build.191.gc988bdd4ff"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Toolkit.Parsers.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Toolkit.Parsers.dll": {}
+        }
+      },
+      "Uno.Microsoft.Toolkit.Uwp/6.1.0-build.191.gc988bdd4ff": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "10.0.3",
+          "Uno.Microsoft.Toolkit": "6.1.0-build.191.gc988bdd4ff",
+          "Uno.UI": "3.0.0-dev.1502"
+        },
+        "compile": {
+          "lib/xamarinios10/Microsoft.Toolkit.Uwp.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Microsoft.Toolkit.Uwp.dll": {}
+        }
+      },
+      "Uno.Microsoft.Toolkit.Uwp.UI/6.1.0-build.191.gc988bdd4ff": {
+        "type": "package",
+        "dependencies": {
+          "Uno.Microsoft.Toolkit.Uwp": "6.1.0-build.191.gc988bdd4ff",
+          "Uno.Microsoft.Xaml.Behaviors.Uwp.Managed": "2.0.2-uno.74",
+          "Uno.UI": "3.0.0-dev.1502"
+        },
+        "compile": {
+          "lib/xamarinios10/Microsoft.Toolkit.Uwp.UI.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Microsoft.Toolkit.Uwp.UI.dll": {}
+        }
+      },
+      "Uno.Microsoft.Toolkit.Uwp.UI.Animations/6.1.0-build.191.gc988bdd4ff": {
+        "type": "package",
+        "dependencies": {
+          "Uno.Microsoft.Toolkit.Uwp.UI": "6.1.0-build.191.gc988bdd4ff",
+          "Uno.UI": "3.0.0-dev.1502"
+        },
+        "compile": {
+          "lib/xamarinios10/Microsoft.Toolkit.Uwp.UI.Animations.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Microsoft.Toolkit.Uwp.UI.Animations.dll": {}
+        }
+      },
+      "Uno.Microsoft.Toolkit.Uwp.UI.Controls/6.1.0-build.191.gc988bdd4ff": {
+        "type": "package",
+        "dependencies": {
+          "Uno.ColorCode.UWP": "2.0.8-gd42a883502",
+          "Uno.Microsoft.Toolkit.Parsers": "6.1.0-build.191.gc988bdd4ff",
+          "Uno.Microsoft.Toolkit.Uwp": "6.1.0-build.191.gc988bdd4ff",
+          "Uno.Microsoft.Toolkit.Uwp.UI": "6.1.0-build.191.gc988bdd4ff",
+          "Uno.Microsoft.Toolkit.Uwp.UI.Animations": "6.1.0-build.191.gc988bdd4ff",
+          "Uno.UI": "3.0.0-dev.1502"
+        },
+        "compile": {
+          "lib/xamarinios10/Microsoft.Toolkit.Uwp.UI.Controls.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Microsoft.Toolkit.Uwp.UI.Controls.dll": {}
+        }
+      },
+      "Uno.Microsoft.Xaml.Behaviors.Interactivity/2.0.2-uno.74": {
+        "type": "package",
+        "dependencies": {
+          "Uno.UI": "3.0.0-dev.899"
+        },
+        "compile": {
+          "lib/xamarinios10/Microsoft.Xaml.Interactivity.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Microsoft.Xaml.Interactivity.dll": {}
+        }
+      },
+      "Uno.Microsoft.Xaml.Behaviors.Uwp.Managed/2.0.2-uno.74": {
+        "type": "package",
+        "dependencies": {
+          "Uno.Microsoft.Xaml.Behaviors.Interactivity": "2.0.2-uno.74",
+          "Uno.UI": "3.0.0-dev.899"
+        },
+        "compile": {
+          "lib/xamarinios10/Microsoft.Xaml.Interactions.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Microsoft.Xaml.Interactions.dll": {}
         }
       },
       "Uno.SourceGenerationTasks/3.0.0-dev.18": {
@@ -1251,7 +1383,7 @@
           "lib/xamarinios10/_._": {}
         }
       },
-      "System.Runtime.CompilerServices.Unsafe/4.5.2": {
+      "System.Runtime.CompilerServices.Unsafe/4.7.1": {
         "type": "package",
         "compile": {
           "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
@@ -1422,6 +1554,31 @@
           "lib/xamarinios10/_._": {}
         }
       },
+      "Uno.ColorCode.Core/2.0.8-gd42a883502": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Drawing.Common.dll"
+        ],
+        "compile": {
+          "lib/xamarinios10/ColorCode.Core.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/ColorCode.Core.dll": {}
+        }
+      },
+      "Uno.ColorCode.UWP/2.0.8-gd42a883502": {
+        "type": "package",
+        "dependencies": {
+          "Uno.ColorCode.Core": "2.0.8-gd42a883502",
+          "Uno.UI": "3.0.0-dev.899"
+        },
+        "compile": {
+          "lib/xamarinios10/ColorCode.UWP.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/ColorCode.UWP.dll": {}
+        }
+      },
       "Uno.Core/2.0.0": {
         "type": "package",
         "dependencies": {
@@ -1455,6 +1612,113 @@
         },
         "runtime": {
           "lib/netstandard2.0/Uno.Diagnostics.Eventing.dll": {}
+        }
+      },
+      "Uno.Microsoft.Toolkit/6.1.0-build.191.gc988bdd4ff": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.7.1"
+        },
+        "compile": {
+          "lib/netstandard2.1/Microsoft.Toolkit.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.Toolkit.dll": {}
+        }
+      },
+      "Uno.Microsoft.Toolkit.Parsers/6.1.0-build.191.gc988bdd4ff": {
+        "type": "package",
+        "dependencies": {
+          "Uno.Microsoft.Toolkit": "6.1.0-build.191.gc988bdd4ff"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Toolkit.Parsers.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Toolkit.Parsers.dll": {}
+        }
+      },
+      "Uno.Microsoft.Toolkit.Uwp/6.1.0-build.191.gc988bdd4ff": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "10.0.3",
+          "Uno.Microsoft.Toolkit": "6.1.0-build.191.gc988bdd4ff",
+          "Uno.UI": "3.0.0-dev.1502"
+        },
+        "compile": {
+          "lib/xamarinios10/Microsoft.Toolkit.Uwp.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Microsoft.Toolkit.Uwp.dll": {}
+        }
+      },
+      "Uno.Microsoft.Toolkit.Uwp.UI/6.1.0-build.191.gc988bdd4ff": {
+        "type": "package",
+        "dependencies": {
+          "Uno.Microsoft.Toolkit.Uwp": "6.1.0-build.191.gc988bdd4ff",
+          "Uno.Microsoft.Xaml.Behaviors.Uwp.Managed": "2.0.2-uno.74",
+          "Uno.UI": "3.0.0-dev.1502"
+        },
+        "compile": {
+          "lib/xamarinios10/Microsoft.Toolkit.Uwp.UI.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Microsoft.Toolkit.Uwp.UI.dll": {}
+        }
+      },
+      "Uno.Microsoft.Toolkit.Uwp.UI.Animations/6.1.0-build.191.gc988bdd4ff": {
+        "type": "package",
+        "dependencies": {
+          "Uno.Microsoft.Toolkit.Uwp.UI": "6.1.0-build.191.gc988bdd4ff",
+          "Uno.UI": "3.0.0-dev.1502"
+        },
+        "compile": {
+          "lib/xamarinios10/Microsoft.Toolkit.Uwp.UI.Animations.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Microsoft.Toolkit.Uwp.UI.Animations.dll": {}
+        }
+      },
+      "Uno.Microsoft.Toolkit.Uwp.UI.Controls/6.1.0-build.191.gc988bdd4ff": {
+        "type": "package",
+        "dependencies": {
+          "Uno.ColorCode.UWP": "2.0.8-gd42a883502",
+          "Uno.Microsoft.Toolkit.Parsers": "6.1.0-build.191.gc988bdd4ff",
+          "Uno.Microsoft.Toolkit.Uwp": "6.1.0-build.191.gc988bdd4ff",
+          "Uno.Microsoft.Toolkit.Uwp.UI": "6.1.0-build.191.gc988bdd4ff",
+          "Uno.Microsoft.Toolkit.Uwp.UI.Animations": "6.1.0-build.191.gc988bdd4ff",
+          "Uno.UI": "3.0.0-dev.1502"
+        },
+        "compile": {
+          "lib/xamarinios10/Microsoft.Toolkit.Uwp.UI.Controls.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Microsoft.Toolkit.Uwp.UI.Controls.dll": {}
+        }
+      },
+      "Uno.Microsoft.Xaml.Behaviors.Interactivity/2.0.2-uno.74": {
+        "type": "package",
+        "dependencies": {
+          "Uno.UI": "3.0.0-dev.899"
+        },
+        "compile": {
+          "lib/xamarinios10/Microsoft.Xaml.Interactivity.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Microsoft.Xaml.Interactivity.dll": {}
+        }
+      },
+      "Uno.Microsoft.Xaml.Behaviors.Uwp.Managed/2.0.2-uno.74": {
+        "type": "package",
+        "dependencies": {
+          "Uno.Microsoft.Xaml.Behaviors.Interactivity": "2.0.2-uno.74",
+          "Uno.UI": "3.0.0-dev.899"
+        },
+        "compile": {
+          "lib/xamarinios10/Microsoft.Xaml.Interactions.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Microsoft.Xaml.Interactions.dll": {}
         }
       },
       "Uno.SourceGenerationTasks/3.0.0-dev.18": {
@@ -1978,7 +2242,7 @@
           "lib/xamarinios10/_._": {}
         }
       },
-      "System.Runtime.CompilerServices.Unsafe/4.5.2": {
+      "System.Runtime.CompilerServices.Unsafe/4.7.1": {
         "type": "package",
         "compile": {
           "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
@@ -2149,6 +2413,31 @@
           "lib/xamarinios10/_._": {}
         }
       },
+      "Uno.ColorCode.Core/2.0.8-gd42a883502": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Drawing.Common.dll"
+        ],
+        "compile": {
+          "lib/xamarinios10/ColorCode.Core.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/ColorCode.Core.dll": {}
+        }
+      },
+      "Uno.ColorCode.UWP/2.0.8-gd42a883502": {
+        "type": "package",
+        "dependencies": {
+          "Uno.ColorCode.Core": "2.0.8-gd42a883502",
+          "Uno.UI": "3.0.0-dev.899"
+        },
+        "compile": {
+          "lib/xamarinios10/ColorCode.UWP.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/ColorCode.UWP.dll": {}
+        }
+      },
       "Uno.Core/2.0.0": {
         "type": "package",
         "dependencies": {
@@ -2182,6 +2471,113 @@
         },
         "runtime": {
           "lib/netstandard2.0/Uno.Diagnostics.Eventing.dll": {}
+        }
+      },
+      "Uno.Microsoft.Toolkit/6.1.0-build.191.gc988bdd4ff": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.7.1"
+        },
+        "compile": {
+          "lib/netstandard2.1/Microsoft.Toolkit.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.Toolkit.dll": {}
+        }
+      },
+      "Uno.Microsoft.Toolkit.Parsers/6.1.0-build.191.gc988bdd4ff": {
+        "type": "package",
+        "dependencies": {
+          "Uno.Microsoft.Toolkit": "6.1.0-build.191.gc988bdd4ff"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Toolkit.Parsers.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Toolkit.Parsers.dll": {}
+        }
+      },
+      "Uno.Microsoft.Toolkit.Uwp/6.1.0-build.191.gc988bdd4ff": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "10.0.3",
+          "Uno.Microsoft.Toolkit": "6.1.0-build.191.gc988bdd4ff",
+          "Uno.UI": "3.0.0-dev.1502"
+        },
+        "compile": {
+          "lib/xamarinios10/Microsoft.Toolkit.Uwp.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Microsoft.Toolkit.Uwp.dll": {}
+        }
+      },
+      "Uno.Microsoft.Toolkit.Uwp.UI/6.1.0-build.191.gc988bdd4ff": {
+        "type": "package",
+        "dependencies": {
+          "Uno.Microsoft.Toolkit.Uwp": "6.1.0-build.191.gc988bdd4ff",
+          "Uno.Microsoft.Xaml.Behaviors.Uwp.Managed": "2.0.2-uno.74",
+          "Uno.UI": "3.0.0-dev.1502"
+        },
+        "compile": {
+          "lib/xamarinios10/Microsoft.Toolkit.Uwp.UI.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Microsoft.Toolkit.Uwp.UI.dll": {}
+        }
+      },
+      "Uno.Microsoft.Toolkit.Uwp.UI.Animations/6.1.0-build.191.gc988bdd4ff": {
+        "type": "package",
+        "dependencies": {
+          "Uno.Microsoft.Toolkit.Uwp.UI": "6.1.0-build.191.gc988bdd4ff",
+          "Uno.UI": "3.0.0-dev.1502"
+        },
+        "compile": {
+          "lib/xamarinios10/Microsoft.Toolkit.Uwp.UI.Animations.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Microsoft.Toolkit.Uwp.UI.Animations.dll": {}
+        }
+      },
+      "Uno.Microsoft.Toolkit.Uwp.UI.Controls/6.1.0-build.191.gc988bdd4ff": {
+        "type": "package",
+        "dependencies": {
+          "Uno.ColorCode.UWP": "2.0.8-gd42a883502",
+          "Uno.Microsoft.Toolkit.Parsers": "6.1.0-build.191.gc988bdd4ff",
+          "Uno.Microsoft.Toolkit.Uwp": "6.1.0-build.191.gc988bdd4ff",
+          "Uno.Microsoft.Toolkit.Uwp.UI": "6.1.0-build.191.gc988bdd4ff",
+          "Uno.Microsoft.Toolkit.Uwp.UI.Animations": "6.1.0-build.191.gc988bdd4ff",
+          "Uno.UI": "3.0.0-dev.1502"
+        },
+        "compile": {
+          "lib/xamarinios10/Microsoft.Toolkit.Uwp.UI.Controls.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Microsoft.Toolkit.Uwp.UI.Controls.dll": {}
+        }
+      },
+      "Uno.Microsoft.Xaml.Behaviors.Interactivity/2.0.2-uno.74": {
+        "type": "package",
+        "dependencies": {
+          "Uno.UI": "3.0.0-dev.899"
+        },
+        "compile": {
+          "lib/xamarinios10/Microsoft.Xaml.Interactivity.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Microsoft.Xaml.Interactivity.dll": {}
+        }
+      },
+      "Uno.Microsoft.Xaml.Behaviors.Uwp.Managed/2.0.2-uno.74": {
+        "type": "package",
+        "dependencies": {
+          "Uno.Microsoft.Xaml.Behaviors.Interactivity": "2.0.2-uno.74",
+          "Uno.UI": "3.0.0-dev.899"
+        },
+        "compile": {
+          "lib/xamarinios10/Microsoft.Xaml.Interactions.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Microsoft.Xaml.Interactions.dll": {}
         }
       },
       "Uno.SourceGenerationTasks/3.0.0-dev.18": {
@@ -2705,7 +3101,7 @@
           "lib/xamarinios10/_._": {}
         }
       },
-      "System.Runtime.CompilerServices.Unsafe/4.5.2": {
+      "System.Runtime.CompilerServices.Unsafe/4.7.1": {
         "type": "package",
         "compile": {
           "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
@@ -2876,6 +3272,31 @@
           "lib/xamarinios10/_._": {}
         }
       },
+      "Uno.ColorCode.Core/2.0.8-gd42a883502": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Drawing.Common.dll"
+        ],
+        "compile": {
+          "lib/xamarinios10/ColorCode.Core.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/ColorCode.Core.dll": {}
+        }
+      },
+      "Uno.ColorCode.UWP/2.0.8-gd42a883502": {
+        "type": "package",
+        "dependencies": {
+          "Uno.ColorCode.Core": "2.0.8-gd42a883502",
+          "Uno.UI": "3.0.0-dev.899"
+        },
+        "compile": {
+          "lib/xamarinios10/ColorCode.UWP.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/ColorCode.UWP.dll": {}
+        }
+      },
       "Uno.Core/2.0.0": {
         "type": "package",
         "dependencies": {
@@ -2909,6 +3330,113 @@
         },
         "runtime": {
           "lib/netstandard2.0/Uno.Diagnostics.Eventing.dll": {}
+        }
+      },
+      "Uno.Microsoft.Toolkit/6.1.0-build.191.gc988bdd4ff": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.7.1"
+        },
+        "compile": {
+          "lib/netstandard2.1/Microsoft.Toolkit.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.Toolkit.dll": {}
+        }
+      },
+      "Uno.Microsoft.Toolkit.Parsers/6.1.0-build.191.gc988bdd4ff": {
+        "type": "package",
+        "dependencies": {
+          "Uno.Microsoft.Toolkit": "6.1.0-build.191.gc988bdd4ff"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Toolkit.Parsers.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Toolkit.Parsers.dll": {}
+        }
+      },
+      "Uno.Microsoft.Toolkit.Uwp/6.1.0-build.191.gc988bdd4ff": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "10.0.3",
+          "Uno.Microsoft.Toolkit": "6.1.0-build.191.gc988bdd4ff",
+          "Uno.UI": "3.0.0-dev.1502"
+        },
+        "compile": {
+          "lib/xamarinios10/Microsoft.Toolkit.Uwp.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Microsoft.Toolkit.Uwp.dll": {}
+        }
+      },
+      "Uno.Microsoft.Toolkit.Uwp.UI/6.1.0-build.191.gc988bdd4ff": {
+        "type": "package",
+        "dependencies": {
+          "Uno.Microsoft.Toolkit.Uwp": "6.1.0-build.191.gc988bdd4ff",
+          "Uno.Microsoft.Xaml.Behaviors.Uwp.Managed": "2.0.2-uno.74",
+          "Uno.UI": "3.0.0-dev.1502"
+        },
+        "compile": {
+          "lib/xamarinios10/Microsoft.Toolkit.Uwp.UI.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Microsoft.Toolkit.Uwp.UI.dll": {}
+        }
+      },
+      "Uno.Microsoft.Toolkit.Uwp.UI.Animations/6.1.0-build.191.gc988bdd4ff": {
+        "type": "package",
+        "dependencies": {
+          "Uno.Microsoft.Toolkit.Uwp.UI": "6.1.0-build.191.gc988bdd4ff",
+          "Uno.UI": "3.0.0-dev.1502"
+        },
+        "compile": {
+          "lib/xamarinios10/Microsoft.Toolkit.Uwp.UI.Animations.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Microsoft.Toolkit.Uwp.UI.Animations.dll": {}
+        }
+      },
+      "Uno.Microsoft.Toolkit.Uwp.UI.Controls/6.1.0-build.191.gc988bdd4ff": {
+        "type": "package",
+        "dependencies": {
+          "Uno.ColorCode.UWP": "2.0.8-gd42a883502",
+          "Uno.Microsoft.Toolkit.Parsers": "6.1.0-build.191.gc988bdd4ff",
+          "Uno.Microsoft.Toolkit.Uwp": "6.1.0-build.191.gc988bdd4ff",
+          "Uno.Microsoft.Toolkit.Uwp.UI": "6.1.0-build.191.gc988bdd4ff",
+          "Uno.Microsoft.Toolkit.Uwp.UI.Animations": "6.1.0-build.191.gc988bdd4ff",
+          "Uno.UI": "3.0.0-dev.1502"
+        },
+        "compile": {
+          "lib/xamarinios10/Microsoft.Toolkit.Uwp.UI.Controls.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Microsoft.Toolkit.Uwp.UI.Controls.dll": {}
+        }
+      },
+      "Uno.Microsoft.Xaml.Behaviors.Interactivity/2.0.2-uno.74": {
+        "type": "package",
+        "dependencies": {
+          "Uno.UI": "3.0.0-dev.899"
+        },
+        "compile": {
+          "lib/xamarinios10/Microsoft.Xaml.Interactivity.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Microsoft.Xaml.Interactivity.dll": {}
+        }
+      },
+      "Uno.Microsoft.Xaml.Behaviors.Uwp.Managed/2.0.2-uno.74": {
+        "type": "package",
+        "dependencies": {
+          "Uno.Microsoft.Xaml.Behaviors.Interactivity": "2.0.2-uno.74",
+          "Uno.UI": "3.0.0-dev.899"
+        },
+        "compile": {
+          "lib/xamarinios10/Microsoft.Xaml.Interactions.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Microsoft.Xaml.Interactions.dll": {}
         }
       },
       "Uno.SourceGenerationTasks/3.0.0-dev.18": {
@@ -4940,26 +5468,31 @@
         "system.runtime.nuspec"
       ]
     },
-    "System.Runtime.CompilerServices.Unsafe/4.5.2": {
-      "sha512": "wprSFgext8cwqymChhrBLu62LMg/1u92bU+VOwyfBimSPVFXtsNqEWC92Pf9ofzJFlk4IHmJA75EDJn1b2goAQ==",
+    "System.Runtime.CompilerServices.Unsafe/4.7.1": {
+      "sha512": "zOHkQmzPCn5zm/BH+cxC1XbUS3P4Yoi3xzW7eRgVpDR2tPGSzyMZ17Ig1iRkfJuY0nhxkQQde8pgePNiA7z7TQ==",
       "type": "package",
-      "path": "system.runtime.compilerservices.unsafe/4.5.2",
+      "path": "system.runtime.compilerservices.unsafe/4.7.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/net461/System.Runtime.CompilerServices.Unsafe.xml",
         "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll",
         "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.xml",
         "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
         "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
         "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
         "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/net461/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/net461/System.Runtime.CompilerServices.Unsafe.xml",
         "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
         "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
         "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
         "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
-        "system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
+        "system.runtime.compilerservices.unsafe.4.7.1.nupkg.sha512",
         "system.runtime.compilerservices.unsafe.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -6037,6 +6570,41 @@
         "system.xml.xdocument.nuspec"
       ]
     },
+    "Uno.ColorCode.Core/2.0.8-gd42a883502": {
+      "sha512": "cqhrWC4jOWsFCQwqPoj8BR0tcYjkbLq9E6scwYGsuzL1g8ng5hqUD7Ty2EnyBNOiip+xrbCHCa2vfHH0QQ8IyQ==",
+      "type": "package",
+      "path": "uno.colorcode.core/2.0.8-gd42a883502",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/monoandroid90/ColorCode.Core.dll",
+        "lib/netstandard1.4/ColorCode.Core.dll",
+        "lib/netstandard2.0/ColorCode.Core.dll",
+        "lib/uap10.0/ColorCode.Core.dll",
+        "lib/uap10.0/ColorCode.Core.pri",
+        "lib/xamarinios10/ColorCode.Core.dll",
+        "lib/xamarinmac20/ColorCode.Core.dll",
+        "uno.colorcode.core.2.0.8-gd42a883502.nupkg.sha512",
+        "uno.colorcode.core.nuspec"
+      ]
+    },
+    "Uno.ColorCode.UWP/2.0.8-gd42a883502": {
+      "sha512": "Yz0zH9iHF8k7rY/1Z5VtBhRf0xm9kFfJ+EfItpiQKqnKv48iddG8uSig8BDHgb18EYfBmwK/KskUl4Smtgy45A==",
+      "type": "package",
+      "path": "uno.colorcode.uwp/2.0.8-gd42a883502",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/monoandroid90/ColorCode.UWP.dll",
+        "lib/netstandard2.0/ColorCode.UWP.dll",
+        "lib/uap10.0/ColorCode.UWP.dll",
+        "lib/uap10.0/ColorCode.UWP.pri",
+        "lib/xamarinios10/ColorCode.UWP.dll",
+        "lib/xamarinmac20/ColorCode.UWP.dll",
+        "uno.colorcode.uwp.2.0.8-gd42a883502.nupkg.sha512",
+        "uno.colorcode.uwp.nuspec"
+      ]
+    },
     "Uno.Core/2.0.0": {
       "sha512": "KMk2LvQ/p88wxwpfBqXDiFGhvODVhMGz/K21V9rhUjrtPYEJ+JVz0cdxpMDwqzjxJxJcLRoF2KcTClYzbRG/oA==",
       "type": "package",
@@ -6088,6 +6656,222 @@
         "lib/netstandard2.0/Uno.Diagnostics.Eventing.pdb",
         "uno.diagnostics.eventing.1.0.4.nupkg.sha512",
         "uno.diagnostics.eventing.nuspec"
+      ]
+    },
+    "Uno.Microsoft.Toolkit/6.1.0-build.191.gc988bdd4ff": {
+      "sha512": "Nq5BPlm/+CV4atK2w9+C/OjQpJVpoHMug9GNb6CzAb9bClbX7/MC6UyBOen5agTzA0hmlg4bYJSNUluqsF9oww==",
+      "type": "package",
+      "path": "uno.microsoft.toolkit/6.1.0-build.191.gc988bdd4ff",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.Toolkit.dll",
+        "lib/netstandard2.0/Microsoft.Toolkit.pdb",
+        "lib/netstandard2.0/Microsoft.Toolkit.xml",
+        "lib/netstandard2.1/Microsoft.Toolkit.dll",
+        "lib/netstandard2.1/Microsoft.Toolkit.pdb",
+        "lib/netstandard2.1/Microsoft.Toolkit.xml",
+        "uno.microsoft.toolkit.6.1.0-build.191.gc988bdd4ff.nupkg.sha512",
+        "uno.microsoft.toolkit.nuspec"
+      ]
+    },
+    "Uno.Microsoft.Toolkit.Parsers/6.1.0-build.191.gc988bdd4ff": {
+      "sha512": "/HFRUEglUnQl2+AaUYEIyD1REBgFsgwWBrXp8fzjQGr0NSZhqm+//MKmthcNlUhJ0snkCDjJ/HJx0f/q1TPqdw==",
+      "type": "package",
+      "path": "uno.microsoft.toolkit.parsers/6.1.0-build.191.gc988bdd4ff",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.Toolkit.Parsers.dll",
+        "lib/netstandard2.0/Microsoft.Toolkit.Parsers.dll.mdb",
+        "lib/netstandard2.0/Microsoft.Toolkit.Parsers.pdb",
+        "lib/netstandard2.0/Microsoft.Toolkit.Parsers.xml",
+        "uno.microsoft.toolkit.parsers.6.1.0-build.191.gc988bdd4ff.nupkg.sha512",
+        "uno.microsoft.toolkit.parsers.nuspec"
+      ]
+    },
+    "Uno.Microsoft.Toolkit.Uwp/6.1.0-build.191.gc988bdd4ff": {
+      "sha512": "tZRaXtZ7TCgxwmXKH8aaAbZJuURT2NXUrbLsJz6rMtj2Wfy1JT7eCvGk2mmuaqOh3IkOCieRE62BvSJdLVkMkw==",
+      "type": "package",
+      "path": "uno.microsoft.toolkit.uwp/6.1.0-build.191.gc988bdd4ff",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/monoandroid90/Microsoft.Toolkit.Uwp.dll",
+        "lib/monoandroid90/Microsoft.Toolkit.Uwp.pdb",
+        "lib/monoandroid90/Microsoft.Toolkit.Uwp.xml",
+        "lib/netstandard2.0/Microsoft.Toolkit.Uwp.dll",
+        "lib/netstandard2.0/Microsoft.Toolkit.Uwp.pdb",
+        "lib/netstandard2.0/Microsoft.Toolkit.Uwp.xml",
+        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.dll",
+        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.pdb",
+        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.pri",
+        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.xml",
+        "lib/xamarinios10/Microsoft.Toolkit.Uwp.dll",
+        "lib/xamarinios10/Microsoft.Toolkit.Uwp.pdb",
+        "lib/xamarinios10/Microsoft.Toolkit.Uwp.xml",
+        "lib/xamarinmac20/Microsoft.Toolkit.Uwp.dll",
+        "lib/xamarinmac20/Microsoft.Toolkit.Uwp.pdb",
+        "lib/xamarinmac20/Microsoft.Toolkit.Uwp.xml",
+        "uno.microsoft.toolkit.uwp.6.1.0-build.191.gc988bdd4ff.nupkg.sha512",
+        "uno.microsoft.toolkit.uwp.nuspec"
+      ]
+    },
+    "Uno.Microsoft.Toolkit.Uwp.UI/6.1.0-build.191.gc988bdd4ff": {
+      "sha512": "TmNZmP1MtFEIrRrufYt5N2TsVwu3c0u8IDXs6Z7lNFIOgyjyiWehxabd10nJ3GOdFBjk6TfyODjmMwKtxhOU1Q==",
+      "type": "package",
+      "path": "uno.microsoft.toolkit.uwp.ui/6.1.0-build.191.gc988bdd4ff",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/monoandroid90/Microsoft.Toolkit.Uwp.UI.dll",
+        "lib/monoandroid90/Microsoft.Toolkit.Uwp.UI.pdb",
+        "lib/monoandroid90/Microsoft.Toolkit.Uwp.UI.xml",
+        "lib/netstandard2.0/Microsoft.Toolkit.Uwp.UI.dll",
+        "lib/netstandard2.0/Microsoft.Toolkit.Uwp.UI.pdb",
+        "lib/netstandard2.0/Microsoft.Toolkit.Uwp.UI.xml",
+        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.dll",
+        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.pdb",
+        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.pri",
+        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.xml",
+        "lib/xamarinios10/Microsoft.Toolkit.Uwp.UI.dll",
+        "lib/xamarinios10/Microsoft.Toolkit.Uwp.UI.pdb",
+        "lib/xamarinios10/Microsoft.Toolkit.Uwp.UI.xml",
+        "lib/xamarinmac20/Microsoft.Toolkit.Uwp.UI.dll",
+        "lib/xamarinmac20/Microsoft.Toolkit.Uwp.UI.pdb",
+        "lib/xamarinmac20/Microsoft.Toolkit.Uwp.UI.xml",
+        "uno.microsoft.toolkit.uwp.ui.6.1.0-build.191.gc988bdd4ff.nupkg.sha512",
+        "uno.microsoft.toolkit.uwp.ui.nuspec"
+      ]
+    },
+    "Uno.Microsoft.Toolkit.Uwp.UI.Animations/6.1.0-build.191.gc988bdd4ff": {
+      "sha512": "4LJ6EoXiwwfS5BM9AHW+QhROEOlM9V+Q1mhYMM6l8r7xm38YDCaxl4kM/eYh/elc7Y82sPTPbFFnfca1Y4sZbw==",
+      "type": "package",
+      "path": "uno.microsoft.toolkit.uwp.ui.animations/6.1.0-build.191.gc988bdd4ff",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/monoandroid90/Microsoft.Toolkit.Uwp.UI.Animations.dll",
+        "lib/monoandroid90/Microsoft.Toolkit.Uwp.UI.Animations.pdb",
+        "lib/monoandroid90/Microsoft.Toolkit.Uwp.UI.Animations.xml",
+        "lib/netstandard2.0/Microsoft.Toolkit.Uwp.UI.Animations.dll",
+        "lib/netstandard2.0/Microsoft.Toolkit.Uwp.UI.Animations.pdb",
+        "lib/netstandard2.0/Microsoft.Toolkit.Uwp.UI.Animations.xml",
+        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Animations.dll",
+        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Animations.pdb",
+        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Animations.pri",
+        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Animations.xml",
+        "lib/xamarinios10/Microsoft.Toolkit.Uwp.UI.Animations.dll",
+        "lib/xamarinios10/Microsoft.Toolkit.Uwp.UI.Animations.pdb",
+        "lib/xamarinios10/Microsoft.Toolkit.Uwp.UI.Animations.xml",
+        "lib/xamarinmac20/Microsoft.Toolkit.Uwp.UI.Animations.dll",
+        "lib/xamarinmac20/Microsoft.Toolkit.Uwp.UI.Animations.pdb",
+        "lib/xamarinmac20/Microsoft.Toolkit.Uwp.UI.Animations.xml",
+        "uno.microsoft.toolkit.uwp.ui.animations.6.1.0-build.191.gc988bdd4ff.nupkg.sha512",
+        "uno.microsoft.toolkit.uwp.ui.animations.nuspec"
+      ]
+    },
+    "Uno.Microsoft.Toolkit.Uwp.UI.Controls/6.1.0-build.191.gc988bdd4ff": {
+      "sha512": "ytq3RGCanVb5L7iK1vr74TjAYC4yQMWKADEv68J5xGyvw7jjIN+Hp0rVsv3zgu36YbTsWcHzwb5YpD9QThVyVA==",
+      "type": "package",
+      "path": "uno.microsoft.toolkit.uwp.ui.controls/6.1.0-build.191.gc988bdd4ff",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/monoandroid90/Microsoft.Toolkit.Uwp.UI.Controls.dll",
+        "lib/monoandroid90/Microsoft.Toolkit.Uwp.UI.Controls.pdb",
+        "lib/monoandroid90/Microsoft.Toolkit.Uwp.UI.Controls.xml",
+        "lib/netstandard2.0/Microsoft.Toolkit.Uwp.UI.Controls.dll",
+        "lib/netstandard2.0/Microsoft.Toolkit.Uwp.UI.Controls.pdb",
+        "lib/netstandard2.0/Microsoft.Toolkit.Uwp.UI.Controls.xml",
+        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls.dll",
+        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls.pdb",
+        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls.pri",
+        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls.xml",
+        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls/BladeView/BladeView.xaml",
+        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls/CameraPreview/CameraPreview.xaml",
+        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls/Carousel/Carousel.xaml",
+        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls/DropShadowPanel/DropShadowPanel.xaml",
+        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls/Expander/Expander.xaml",
+        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls/Eyedropper/Eyedropper.xaml",
+        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls/Eyedropper/EyedropperToolButton.xaml",
+        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls/GridSplitter/GridSplitter.xaml",
+        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls/HeaderedContentControl/HeaderedContentControl.xaml",
+        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls/HeaderedItemsControl/HeaderedItemsControl.xaml",
+        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls/HeaderedTextBlock/HeaderedTextBlock.xaml",
+        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls/ImageCropper/ImageCropper.xaml",
+        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls/ImageCropper/ImageCropperThumb.xaml",
+        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls/ImageEx/ImageEx.xaml",
+        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls/InAppNotification/InAppNotification.xaml",
+        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls/InAppNotification/Styles/MSEdgeNotificationStyle.xaml",
+        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls/InAppNotification/Styles/VSCodeNotificationStyle.xaml",
+        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls/InfiniteCanvas/InfiniteCanvas.xaml",
+        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls/LayoutTransformControl/LayoutTransformControl.xaml",
+        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls/Loading/Loading.xaml",
+        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls/MarkdownTextBlock/MarkdownTextBlock.xaml",
+        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls/MasterDetailsView/MasterDetailsView.xaml",
+        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls/Menu/Menu.xaml",
+        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls/Microsoft.Toolkit.Uwp.UI.Controls.xr.xml",
+        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls/OrbitView/OrbitView.xaml",
+        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls/RadialGauge/RadialGauge.xaml",
+        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls/RadialProgressBar/RadialProgressBar.xaml",
+        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls/RangeSelector/RangeSelector.xaml",
+        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls/RemoteDevicePicker/RemoteDevicePicker.xaml",
+        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls/RotatorTile/RotatorTile.xaml",
+        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls/ScrollHeader/ScrollHeader.xaml",
+        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls/TabView/TabView.xaml",
+        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls/TextToolbar/Symbols/Symbols.xaml",
+        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls/TextToolbar/TextToolbar.xaml",
+        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls/TextToolbar/ToolbarItems/ToolbarButton.xaml",
+        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls/TextToolbar/ToolbarItems/ToolbarSeparator.xaml",
+        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls/Themes/Generic.xaml",
+        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls/TileControl/TileControl.xaml",
+        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls/TokenizingTextBox/TokenizingTextBox.xaml",
+        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls/TokenizingTextBox/TokenizingTextBoxItem.AutoSuggestBox.xaml",
+        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls/TokenizingTextBox/TokenizingTextBoxItem.Token.xaml",
+        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls/TokenizingTextBox/TokenizingTextBoxItem.xaml",
+        "lib/xamarinios10/Microsoft.Toolkit.Uwp.UI.Controls.dll",
+        "lib/xamarinios10/Microsoft.Toolkit.Uwp.UI.Controls.pdb",
+        "lib/xamarinios10/Microsoft.Toolkit.Uwp.UI.Controls.xml",
+        "lib/xamarinmac20/Microsoft.Toolkit.Uwp.UI.Controls.dll",
+        "lib/xamarinmac20/Microsoft.Toolkit.Uwp.UI.Controls.pdb",
+        "lib/xamarinmac20/Microsoft.Toolkit.Uwp.UI.Controls.xml",
+        "uno.microsoft.toolkit.uwp.ui.controls.6.1.0-build.191.gc988bdd4ff.nupkg.sha512",
+        "uno.microsoft.toolkit.uwp.ui.controls.nuspec"
+      ]
+    },
+    "Uno.Microsoft.Xaml.Behaviors.Interactivity/2.0.2-uno.74": {
+      "sha512": "f8kryAjBQGiuKTw77E/ppd83tKyGxVXtM1CyinB4DOHupbYUHUxWZRUzdj4Ppx3qaCdwxSpAG1RyR5P2TNxPRA==",
+      "type": "package",
+      "path": "uno.microsoft.xaml.behaviors.interactivity/2.0.2-uno.74",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/monoandroid90/Microsoft.Xaml.Interactivity.dll",
+        "lib/netstandard2.0/Microsoft.Xaml.Interactivity.dll",
+        "lib/uap10.0/Microsoft.Xaml.Interactivity.dll",
+        "lib/uap10.0/Microsoft.Xaml.Interactivity.pri",
+        "lib/xamarinios10/Microsoft.Xaml.Interactivity.dll",
+        "lib/xamarinmac20/Microsoft.Xaml.Interactivity.dll",
+        "uno.microsoft.xaml.behaviors.interactivity.2.0.2-uno.74.nupkg.sha512",
+        "uno.microsoft.xaml.behaviors.interactivity.nuspec"
+      ]
+    },
+    "Uno.Microsoft.Xaml.Behaviors.Uwp.Managed/2.0.2-uno.74": {
+      "sha512": "jB/2V5DjNCKiIkcf+0whD1M6zqfXwUNAwb5si+Vx/zB465wpudRTjPPk5BqL2I1qXyW4t/XcIBvgR5imTWmsxQ==",
+      "type": "package",
+      "path": "uno.microsoft.xaml.behaviors.uwp.managed/2.0.2-uno.74",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/monoandroid90/Microsoft.Xaml.Interactions.dll",
+        "lib/netstandard2.0/Microsoft.Xaml.Interactions.dll",
+        "lib/uap10.0/Microsoft.Xaml.Interactions.dll",
+        "lib/uap10.0/Microsoft.Xaml.Interactions.pri",
+        "lib/xamarinios10/Microsoft.Xaml.Interactions.dll",
+        "lib/xamarinmac20/Microsoft.Xaml.Interactions.dll",
+        "uno.microsoft.xaml.behaviors.uwp.managed.2.0.2-uno.74.nupkg.sha512",
+        "uno.microsoft.xaml.behaviors.uwp.managed.nuspec"
       ]
     },
     "Uno.SourceGenerationTasks/3.0.0-dev.18": {
@@ -6864,6 +7648,8 @@
     "Xamarin.iOS,Version=v1.0": [
       "Microsoft.Extensions.Logging.Console >= 1.1.1",
       "Microsoft.Extensions.Logging.Filter >= 1.1.1",
+      "Uno.Microsoft.Toolkit.Uwp >= 6.1.0-build.191.gc988bdd4ff",
+      "Uno.Microsoft.Toolkit.Uwp.UI.Controls >= 6.1.0-build.191.gc988bdd4ff",
       "Uno.UI >= 3.2.0-dev.441",
       "Uno.UI.RemoteControl >= 3.2.0-dev.441"
     ]
@@ -6917,6 +7703,14 @@
           "Microsoft.Extensions.Logging.Filter": {
             "target": "Package",
             "version": "[1.1.1, )"
+          },
+          "Uno.Microsoft.Toolkit.Uwp": {
+            "target": "Package",
+            "version": "[6.1.0-build.191.gc988bdd4ff, )"
+          },
+          "Uno.Microsoft.Toolkit.Uwp.UI.Controls": {
+            "target": "Package",
+            "version": "[6.1.0-build.191.gc988bdd4ff, )"
           },
           "Uno.UI": {
             "target": "Package",

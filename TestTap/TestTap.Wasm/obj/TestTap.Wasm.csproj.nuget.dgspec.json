@@ -63,21 +63,37 @@
               "version": "[2.0.3, )",
               "autoReferenced": true
             },
+            "Uno.Material": {
+              "target": "Package",
+              "version": "[1.0.0-dev.578, )"
+            },
+            "Uno.Microsoft.Toolkit.Uwp": {
+              "target": "Package",
+              "version": "[6.1.0-build.191.gc988bdd4ff, )"
+            },
+            "Uno.Microsoft.Toolkit.Uwp.UI.Controls": {
+              "target": "Package",
+              "version": "[6.1.0-build.191.gc988bdd4ff, )"
+            },
+            "Uno.UI.Lottie": {
+              "target": "Package",
+              "version": "[3.2.0-dev.241, )"
+            },
             "Uno.UI.RemoteControl": {
               "target": "Package",
-              "version": "[3.2.0-dev.441, )"
+              "version": "[3.2.0-dev.241, )"
             },
             "Uno.UI.WebAssembly": {
               "target": "Package",
-              "version": "[3.2.0-dev.441, )"
+              "version": "[3.2.0-dev.241, )"
             },
             "Uno.Wasm.Bootstrap": {
               "target": "Package",
-              "version": "[2.0.0-dev.67, )"
+              "version": "[1.5.0-dev.57, )"
             },
             "Uno.Wasm.Bootstrap.DevServer": {
               "target": "Package",
-              "version": "[2.0.0-dev.67, )"
+              "version": "[1.5.0-dev.57, )"
             }
           },
           "imports": [

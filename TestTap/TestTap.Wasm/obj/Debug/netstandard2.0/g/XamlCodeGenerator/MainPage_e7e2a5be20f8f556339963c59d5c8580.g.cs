@@ -52,6 +52,17 @@ namespace TestTap
 			NameScope.SetNameScope(this, nameScope);
 			IsParsing = true
 			;
+			Resources["EvItemContainerStyle"] = 
+			(global::Windows.UI.Xaml.ResourceDictionary.ResourceInitializer)(() => 
+				new global::Windows.UI.Xaml.Style(typeof(global::Windows.UI.Xaml.Controls.ListViewItem))
+				{
+					Setters = 
+					{
+						new global::Windows.UI.Xaml.Setter(global::Windows.UI.Xaml.Controls.ListViewItem.HorizontalContentAlignmentProperty, (Windows.UI.Xaml.HorizontalAlignment)global::Windows.UI.Xaml.HorizontalAlignment.Stretch/* Windows.UI.Xaml.HorizontalAlignment/Windows.UI.Xaml.HorizontalAlignment, Stretch, Setter/Value */),
+					}
+				}
+			)
+			;
 			Resources["ListViewItemTemplate1"] = 
 			(global::Windows.UI.Xaml.ResourceDictionary.ResourceInitializer)(() => 
 				new global::Windows.UI.Xaml.DataTemplate(() => 				new _MainPage_e7e2a5be20f8f556339963c59d5c8580_TestTapMainPageSC0().Build()
@@ -67,25 +78,54 @@ namespace TestTap
 				{
 					new global::Windows.UI.Xaml.Controls.RowDefinition
 					{
-						Height = new Windows.UI.Xaml.GridLength(50f, Windows.UI.Xaml.GridUnitType.Pixel)/* Windows.UI.Xaml.GridLength/, 50, RowDefinition/Height */,
-						// Source ..\..\..\..\..\..\..\TestTap.Shared\MainPage.xaml (Line 21:14)
+						Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Star)/* Windows.UI.Xaml.GridLength/, *, RowDefinition/Height */,
+						// Source ..\..\..\..\..\..\..\TestTap.Shared\MainPage.xaml (Line 50:14)
 					}
 					,
 					new global::Windows.UI.Xaml.Controls.RowDefinition
 					{
-						Height = new Windows.UI.Xaml.GridLength(200f, Windows.UI.Xaml.GridUnitType.Pixel)/* Windows.UI.Xaml.GridLength/, 200, RowDefinition/Height */,
-						// Source ..\..\..\..\..\..\..\TestTap.Shared\MainPage.xaml (Line 22:14)
+						Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, Auto, RowDefinition/Height */,
+						// Source ..\..\..\..\..\..\..\TestTap.Shared\MainPage.xaml (Line 51:14)
 					}
 					,
 					new global::Windows.UI.Xaml.Controls.RowDefinition
 					{
-						Height = new Windows.UI.Xaml.GridLength(200f, Windows.UI.Xaml.GridUnitType.Pixel)/* Windows.UI.Xaml.GridLength/, 200, RowDefinition/Height */,
-						// Source ..\..\..\..\..\..\..\TestTap.Shared\MainPage.xaml (Line 23:14)
+						Height = new Windows.UI.Xaml.GridLength(20f, Windows.UI.Xaml.GridUnitType.Pixel)/* Windows.UI.Xaml.GridLength/, 20, RowDefinition/Height */,
+						// Source ..\..\..\..\..\..\..\TestTap.Shared\MainPage.xaml (Line 52:14)
 					}
 					,
 				}
 				,
-				// Source ..\..\..\..\..\..\..\TestTap.Shared\MainPage.xaml (Line 19:6)
+				ColumnDefinitions = 
+				{
+					new global::Windows.UI.Xaml.Controls.ColumnDefinition
+					{
+						MaxWidth = 600d/* double/, 600, ColumnDefinition/MaxWidth */,
+						// Source ..\..\..\..\..\..\..\TestTap.Shared\MainPage.xaml (Line 55:14)
+					}
+					.MainPage_e7e2a5be20f8f556339963c59d5c8580_XamlApply((MainPage_e7e2a5be20f8f556339963c59d5c8580XamlApplyExtensions.XamlApplyHandler1)(c3 => 
+					{
+						nameScope.RegisterName("GridColumn0Ux", c3);
+						this.GridColumn0Ux = c3;
+					}
+					))
+					,
+					new global::Windows.UI.Xaml.Controls.ColumnDefinition
+					{
+						Width = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Star)/* Windows.UI.Xaml.GridLength/, *, ColumnDefinition/Width */,
+						MaxWidth = 600d/* double/, 600, ColumnDefinition/MaxWidth */,
+						// Source ..\..\..\..\..\..\..\TestTap.Shared\MainPage.xaml (Line 56:14)
+					}
+					.MainPage_e7e2a5be20f8f556339963c59d5c8580_XamlApply((MainPage_e7e2a5be20f8f556339963c59d5c8580XamlApplyExtensions.XamlApplyHandler1)(c4 => 
+					{
+						nameScope.RegisterName("GridColumn1Ux", c4);
+						this.GridColumn1Ux = c4;
+					}
+					))
+					,
+				}
+				,
+				// Source ..\..\..\..\..\..\..\TestTap.Shared\MainPage.xaml (Line 44:6)
 				Children = 
 				{
 					new global::Windows.UI.Xaml.Controls.TextBlock
@@ -93,118 +133,361 @@ namespace TestTap
 						IsParsing = true
 						,
 						FontSize = 30d/* double/, 30, TextBlock/FontSize */,
-						// Source ..\..\..\..\..\..\..\TestTap.Shared\MainPage.xaml (Line 25:10)
+						// Source ..\..\..\..\..\..\..\TestTap.Shared\MainPage.xaml (Line 61:10)
 					}
-					.MainPage_e7e2a5be20f8f556339963c59d5c8580_XamlApply((MainPage_e7e2a5be20f8f556339963c59d5c8580XamlApplyExtensions.XamlApplyHandler1)(c3 => 
+					.MainPage_e7e2a5be20f8f556339963c59d5c8580_XamlApply((MainPage_e7e2a5be20f8f556339963c59d5c8580XamlApplyExtensions.XamlApplyHandler2)(c5 => 
 					{
-						global::Windows.UI.Xaml.Controls.Grid.SetRow(c3, 0/* int/, 0, Grid/Row */);
-						c3.SetBinding(global::Windows.UI.Xaml.Controls.TextBlock.TextProperty, new Windows.UI.Xaml.Data.Binding{ Mode = global::Windows.UI.Xaml.Data.BindingMode.OneWay/* Windows.UI.Xaml.Data.BindingMode/Windows.UI.Xaml.Data.BindingMode, OneWay, Bind/Mode */,  }.Apply(___b =>  /*defaultBindModeOneTime*/ global::Uno.UI.Xaml.BindingHelper.SetBindingXBindProvider(___b, this, ___ctx => ___ctx is global::TestTap.MainPage ___tctx ? (object)(___tctx.ViewModel.TestValue) : null, null , new [] {"ViewModel.TestValue"})));
-												this._component_0 = c3;
-						global::Uno.UI.FrameworkElementHelper.SetBaseUri(c3, "file:///C:/MSP/2018/Uno/Git/TestTap/TestTap.Shared/MainPage.xaml");
-						c3.CreationComplete();
-					}
-					))
-					,
-					new global::Windows.UI.Xaml.Controls.ListView
-					{
-						IsParsing = true
-						,
-						Name = "ListUx",
-						// Source ..\..\..\..\..\..\..\TestTap.Shared\MainPage.xaml (Line 29:10)
-					}
-					.MainPage_e7e2a5be20f8f556339963c59d5c8580_XamlApply((MainPage_e7e2a5be20f8f556339963c59d5c8580XamlApplyExtensions.XamlApplyHandler2)(c4 => 
-					{
-						nameScope.RegisterName("ListUx", c4);
-						this.ListUx = c4;
-						global::Windows.UI.Xaml.Controls.Grid.SetRow(c4, 1/* int/, 1, Grid/Row */);
-						global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c4, global::Windows.UI.Xaml.Controls.ListView.ItemTemplateProperty, "ListViewItemTemplate1", isThemeResourceExtension: false, context: global::TestTap.Wasm.GlobalStaticResources.__ParseContext_);
-						c4.SetBinding(global::Windows.UI.Xaml.Controls.ListView.ItemsSourceProperty, new Windows.UI.Xaml.Data.Binding{ Path = @"TestList"/* Windows.UI.Xaml.PropertyPath/Windows.UI.Xaml.PropertyPath, TestList, /_PositionalParameters */ });
-												this._component_1 = c4;
-						global::Uno.UI.FrameworkElementHelper.SetBaseUri(c4, "file:///C:/MSP/2018/Uno/Git/TestTap/TestTap.Shared/MainPage.xaml");
-						c4.CreationComplete();
+						global::Windows.UI.Xaml.Controls.Grid.SetRow(c5, 1/* int/, 1, Grid/Row */);
+						c5.SetBinding(global::Windows.UI.Xaml.Controls.TextBlock.TextProperty, new Windows.UI.Xaml.Data.Binding{ Mode = global::Windows.UI.Xaml.Data.BindingMode.OneWay/* Windows.UI.Xaml.Data.BindingMode/Windows.UI.Xaml.Data.BindingMode, OneWay, Bind/Mode */,  }.Apply(___b =>  /*defaultBindModeOneTime*/ global::Uno.UI.Xaml.BindingHelper.SetBindingXBindProvider(___b, this, ___ctx => ___ctx is global::TestTap.MainPage ___tctx ? (object)(___tctx.ViewModel.TestValue) : null, null , new [] {"ViewModel.TestValue"})));
+												this._component_0 = c5;
+						global::Uno.UI.FrameworkElementHelper.SetBaseUri(c5, "file:///C:/MSP/2018/Uno/Git/TestTap/TestTap.Shared/MainPage.xaml");
+						c5.CreationComplete();
 					}
 					))
 					,
-					new global::Windows.UI.Xaml.Controls.Pivot
+					new global::Windows.UI.Xaml.Controls.Grid
 					{
 						IsParsing = true
 						,
-						Name = "PivotUx",
-						// Source ..\..\..\..\..\..\..\TestTap.Shared\MainPage.xaml (Line 34:10)
-						Items = 
+						// Source ..\..\..\..\..\..\..\TestTap.Shared\MainPage.xaml (Line 79:10)
+						Children = 
 						{
-							new global::Windows.UI.Xaml.Controls.PivotItem
+							new global::Microsoft.Toolkit.Uwp.UI.Controls.TabView
 							{
 								IsParsing = true
 								,
-								Header = @"P1"/* object/, P1, PivotItem/Header */,
-								// Source ..\..\..\..\..\..\..\TestTap.Shared\MainPage.xaml (Line 35:14)
-								Content = 
-								new global::Windows.UI.Xaml.Controls.ListView
+								Name = "tabs",
+								CanCloseTabs = true/* bool/, True, TabView/CanCloseTabs */,
+								IsSwipeEnabled = true/* bool/, True, TabView/IsSwipeEnabled */,
+								// Source ..\..\..\..\..\..\..\TestTap.Shared\MainPage.xaml (Line 80:14)
+								Items = 
 								{
-									IsParsing = true
+									new global::Microsoft.Toolkit.Uwp.UI.Controls.TabViewItem
+									{
+										IsParsing = true
+										,
+										Name = "t1",
+										Header = @"t1"/* object/, t1, TabViewItem/Header */,
+										// Source ..\..\..\..\..\..\..\TestTap.Shared\MainPage.xaml (Line 85:18)
+										Content = 
+										new global::Windows.UI.Xaml.Controls.ListView
+										{
+											IsParsing = true
+											,
+											Name = "ListTUx",
+											// Source ..\..\..\..\..\..\..\TestTap.Shared\MainPage.xaml (Line 86:22)
+										}
+										.MainPage_e7e2a5be20f8f556339963c59d5c8580_XamlApply((MainPage_e7e2a5be20f8f556339963c59d5c8580XamlApplyExtensions.XamlApplyHandler3)(c6 => 
+										{
+											nameScope.RegisterName("ListTUx", c6);
+											this.ListTUx = c6;
+											global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c6, global::Windows.UI.Xaml.Controls.ListView.ItemTemplateProperty, "ListViewItemTemplate1", isThemeResourceExtension: false, context: global::TestTap.Wasm.GlobalStaticResources.__ParseContext_);
+											c6.SetBinding(global::Windows.UI.Xaml.Controls.ListView.ItemsSourceProperty, new Windows.UI.Xaml.Data.Binding{ Path = @"TestList"/* Windows.UI.Xaml.PropertyPath/Windows.UI.Xaml.PropertyPath, TestList, /_PositionalParameters */ });
+																						this._component_1 = c6;
+											global::Uno.UI.FrameworkElementHelper.SetBaseUri(c6, "file:///C:/MSP/2018/Uno/Git/TestTap/TestTap.Shared/MainPage.xaml");
+											c6.CreationComplete();
+										}
+										))
+										,
+									}
+									.MainPage_e7e2a5be20f8f556339963c59d5c8580_XamlApply((MainPage_e7e2a5be20f8f556339963c59d5c8580XamlApplyExtensions.XamlApplyHandler4)(c7 => 
+									{
+										nameScope.RegisterName("t1", c7);
+										this.t1 = c7;
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c7, "file:///C:/MSP/2018/Uno/Git/TestTap/TestTap.Shared/MainPage.xaml");
+										c7.CreationComplete();
+									}
+									))
 									,
-									Name = "ListPUx",
-									// Source ..\..\..\..\..\..\..\TestTap.Shared\MainPage.xaml (Line 36:18)
+									new global::Microsoft.Toolkit.Uwp.UI.Controls.TabViewItem
+									{
+										IsParsing = true
+										,
+										Name = "t2",
+										Header = @"t2"/* object/, t2, TabViewItem/Header */,
+										// Source ..\..\..\..\..\..\..\TestTap.Shared\MainPage.xaml (Line 91:18)
+										Content = 
+										new global::Windows.UI.Xaml.Controls.ListView
+										{
+											IsParsing = true
+											,
+											Name = "ListT2Ux",
+											ItemTemplate = 											new global::Windows.UI.Xaml.DataTemplate(() => 											new _MainPage_e7e2a5be20f8f556339963c59d5c8580_TestTapMainPageSC1().Build()
+											)											,
+											// Source ..\..\..\..\..\..\..\TestTap.Shared\MainPage.xaml (Line 92:22)
+										}
+										.MainPage_e7e2a5be20f8f556339963c59d5c8580_XamlApply((MainPage_e7e2a5be20f8f556339963c59d5c8580XamlApplyExtensions.XamlApplyHandler3)(c8 => 
+										{
+											nameScope.RegisterName("ListT2Ux", c8);
+											this.ListT2Ux = c8;
+											global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c8, global::Windows.UI.Xaml.Controls.ListView.ItemContainerStyleProperty, "EvItemContainerStyle", isThemeResourceExtension: false, context: global::TestTap.Wasm.GlobalStaticResources.__ParseContext_);
+											c8.SetBinding(global::Windows.UI.Xaml.Controls.ListView.ItemsSourceProperty, new Windows.UI.Xaml.Data.Binding{ Path = @"TestList"/* Windows.UI.Xaml.PropertyPath/Windows.UI.Xaml.PropertyPath, TestList, /_PositionalParameters */, Mode = global::Windows.UI.Xaml.Data.BindingMode.TwoWay/* Windows.UI.Xaml.Data.BindingMode/Windows.UI.Xaml.Data.BindingMode, TwoWay, Binding/Mode */ });
+																						var SelectionChanged_OnSelectionChanged_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
+											c8.SelectionChanged += (OnSelectionChanged_sender,OnSelectionChanged_e) => (SelectionChanged_OnSelectionChanged_That.Target as MainPage)?.OnSelectionChanged(OnSelectionChanged_sender,OnSelectionChanged_e);
+											this._component_2 = c8;
+											global::Uno.UI.FrameworkElementHelper.SetBaseUri(c8, "file:///C:/MSP/2018/Uno/Git/TestTap/TestTap.Shared/MainPage.xaml");
+											c8.CreationComplete();
+										}
+										))
+										,
+									}
+									.MainPage_e7e2a5be20f8f556339963c59d5c8580_XamlApply((MainPage_e7e2a5be20f8f556339963c59d5c8580XamlApplyExtensions.XamlApplyHandler4)(c9 => 
+									{
+										nameScope.RegisterName("t2", c9);
+										this.t2 = c9;
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c9, "file:///C:/MSP/2018/Uno/Git/TestTap/TestTap.Shared/MainPage.xaml");
+										c9.CreationComplete();
+									}
+									))
+									,
 								}
-								.MainPage_e7e2a5be20f8f556339963c59d5c8580_XamlApply((MainPage_e7e2a5be20f8f556339963c59d5c8580XamlApplyExtensions.XamlApplyHandler2)(c5 => 
-								{
-									nameScope.RegisterName("ListPUx", c5);
-									this.ListPUx = c5;
-									global::Windows.UI.Xaml.Controls.Grid.SetRow(c5, 1/* int/, 1, Grid/Row */);
-									global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c5, global::Windows.UI.Xaml.Controls.ListView.ItemTemplateProperty, "ListViewItemTemplate1", isThemeResourceExtension: false, context: global::TestTap.Wasm.GlobalStaticResources.__ParseContext_);
-									c5.SetBinding(global::Windows.UI.Xaml.Controls.ListView.ItemsSourceProperty, new Windows.UI.Xaml.Data.Binding{ Path = @"TestList"/* Windows.UI.Xaml.PropertyPath/Windows.UI.Xaml.PropertyPath, TestList, /_PositionalParameters */ });
-																		this._component_2 = c5;
-									global::Uno.UI.FrameworkElementHelper.SetBaseUri(c5, "file:///C:/MSP/2018/Uno/Git/TestTap/TestTap.Shared/MainPage.xaml");
-									c5.CreationComplete();
-								}
-								))
-								,
 							}
-							.MainPage_e7e2a5be20f8f556339963c59d5c8580_XamlApply((MainPage_e7e2a5be20f8f556339963c59d5c8580XamlApplyExtensions.XamlApplyHandler3)(c6 => 
+							.MainPage_e7e2a5be20f8f556339963c59d5c8580_XamlApply((MainPage_e7e2a5be20f8f556339963c59d5c8580XamlApplyExtensions.XamlApplyHandler5)(c10 => 
 							{
-								global::Uno.UI.FrameworkElementHelper.SetBaseUri(c6, "file:///C:/MSP/2018/Uno/Git/TestTap/TestTap.Shared/MainPage.xaml");
-								c6.CreationComplete();
+								nameScope.RegisterName("tabs", c10);
+								this.tabs = c10;
+								global::Windows.UI.Xaml.Controls.Grid.SetRow(c10, 0/* int/, 0, Grid/Row */);
+								global::Uno.UI.FrameworkElementHelper.SetBaseUri(c10, "file:///C:/MSP/2018/Uno/Git/TestTap/TestTap.Shared/MainPage.xaml");
+								c10.CreationComplete();
 							}
 							))
 							,
 						}
 					}
-					.MainPage_e7e2a5be20f8f556339963c59d5c8580_XamlApply((MainPage_e7e2a5be20f8f556339963c59d5c8580XamlApplyExtensions.XamlApplyHandler4)(c7 => 
+					.MainPage_e7e2a5be20f8f556339963c59d5c8580_XamlApply((MainPage_e7e2a5be20f8f556339963c59d5c8580XamlApplyExtensions.XamlApplyHandler6)(c11 => 
 					{
-						nameScope.RegisterName("PivotUx", c7);
-						this.PivotUx = c7;
-						global::Windows.UI.Xaml.Controls.Grid.SetRow(c7, 2/* int/, 2, Grid/Row */);
-						global::Uno.UI.FrameworkElementHelper.SetBaseUri(c7, "file:///C:/MSP/2018/Uno/Git/TestTap/TestTap.Shared/MainPage.xaml");
-						c7.CreationComplete();
+						global::Uno.UI.FrameworkElementHelper.SetBaseUri(c11, "file:///C:/MSP/2018/Uno/Git/TestTap/TestTap.Shared/MainPage.xaml");
+						c11.CreationComplete();
+					}
+					))
+					,
+					new global::Windows.UI.Xaml.Controls.Frame
+					{
+						IsParsing = true
+						,
+						Name = "TaskAndSe"/* string/, TaskAndSe, Frame/Name */,
+						Margin = new global::Windows.UI.Xaml.Thickness(5,0,5,0)/* Windows.UI.Xaml.Thickness/, 5,0,5,0, Frame/Margin */,
+						// Source ..\..\..\..\..\..\..\TestTap.Shared\MainPage.xaml (Line 106:10)
+					}
+					.MainPage_e7e2a5be20f8f556339963c59d5c8580_XamlApply((MainPage_e7e2a5be20f8f556339963c59d5c8580XamlApplyExtensions.XamlApplyHandler7)(c12 => 
+					{
+						nameScope.RegisterName("TaskAndSe", c12);
+						this.TaskAndSe = c12;
+						global::Windows.UI.Xaml.Controls.Grid.SetRow(c12, 0/* int/, 0, Grid/Row */);
+						global::Windows.UI.Xaml.Controls.Grid.SetColumn(c12, 1/* int/, 1, Grid/Column */);
+						global::Uno.UI.FrameworkElementHelper.SetBaseUri(c12, "file:///C:/MSP/2018/Uno/Git/TestTap/TestTap.Shared/MainPage.xaml");
+						c12.CreationComplete();
+					}
+					))
+					,
+					new global::Windows.UI.Xaml.Controls.StackPanel
+					{
+						IsParsing = true
+						,
+						Orientation = global::Windows.UI.Xaml.Controls.Orientation.Horizontal/* Windows.UI.Xaml.Controls.Orientation/, Horizontal, StackPanel/Orientation */,
+						// Source ..\..\..\..\..\..\..\TestTap.Shared\MainPage.xaml (Line 111:10)
+						Children = 
+						{
+							new global::Windows.UI.Xaml.Controls.Button
+							{
+								IsParsing = true
+								,
+								Name = "AddTareaUx",
+								Margin = new global::Windows.UI.Xaml.Thickness(10,0,0,0)/* Windows.UI.Xaml.Thickness/, 10,0,0,0, Button/Margin */,
+								Background = SolidColorBrushHelper.Transparent/* Windows.UI.Xaml.Media.Brush/, Transparent, Button/Background */,
+								// Source ..\..\..\..\..\..\..\TestTap.Shared\MainPage.xaml (Line 112:14)
+								Content = 
+								new global::Windows.UI.Xaml.Controls.SymbolIcon
+								{
+									IsParsing = true
+									,
+									Symbol = global::Windows.UI.Xaml.Controls.Symbol.Add/* Windows.UI.Xaml.Controls.Symbol/, Add, SymbolIcon/Symbol */,
+									// Source ..\..\..\..\..\..\..\TestTap.Shared\MainPage.xaml (Line 116:18)
+								}
+								.MainPage_e7e2a5be20f8f556339963c59d5c8580_XamlApply((MainPage_e7e2a5be20f8f556339963c59d5c8580XamlApplyExtensions.XamlApplyHandler8)(c13 => 
+								{
+									global::Uno.UI.FrameworkElementHelper.SetBaseUri(c13, "file:///C:/MSP/2018/Uno/Git/TestTap/TestTap.Shared/MainPage.xaml");
+									c13.CreationComplete();
+								}
+								))
+								,
+							}
+							.MainPage_e7e2a5be20f8f556339963c59d5c8580_XamlApply((MainPage_e7e2a5be20f8f556339963c59d5c8580XamlApplyExtensions.XamlApplyHandler9)(c14 => 
+							{
+								nameScope.RegisterName("AddTareaUx", c14);
+								this.AddTareaUx = c14;
+								global::Uno.UI.FrameworkElementHelper.SetBaseUri(c14, "file:///C:/MSP/2018/Uno/Git/TestTap/TestTap.Shared/MainPage.xaml");
+								c14.CreationComplete();
+							}
+							))
+							,
+							new global::Windows.UI.Xaml.Controls.Button
+							{
+								IsParsing = true
+								,
+								Name = "EditTareaUx",
+								Margin = new global::Windows.UI.Xaml.Thickness(10,0,0,0)/* Windows.UI.Xaml.Thickness/, 10,0,0,0, Button/Margin */,
+								Background = SolidColorBrushHelper.Transparent/* Windows.UI.Xaml.Media.Brush/, Transparent, Button/Background */,
+								// Source ..\..\..\..\..\..\..\TestTap.Shared\MainPage.xaml (Line 118:14)
+								Content = 
+								new global::Windows.UI.Xaml.Controls.SymbolIcon
+								{
+									IsParsing = true
+									,
+									Symbol = global::Windows.UI.Xaml.Controls.Symbol.Edit/* Windows.UI.Xaml.Controls.Symbol/, Edit, SymbolIcon/Symbol */,
+									// Source ..\..\..\..\..\..\..\TestTap.Shared\MainPage.xaml (Line 122:18)
+								}
+								.MainPage_e7e2a5be20f8f556339963c59d5c8580_XamlApply((MainPage_e7e2a5be20f8f556339963c59d5c8580XamlApplyExtensions.XamlApplyHandler8)(c15 => 
+								{
+									global::Uno.UI.FrameworkElementHelper.SetBaseUri(c15, "file:///C:/MSP/2018/Uno/Git/TestTap/TestTap.Shared/MainPage.xaml");
+									c15.CreationComplete();
+								}
+								))
+								,
+							}
+							.MainPage_e7e2a5be20f8f556339963c59d5c8580_XamlApply((MainPage_e7e2a5be20f8f556339963c59d5c8580XamlApplyExtensions.XamlApplyHandler9)(c16 => 
+							{
+								nameScope.RegisterName("EditTareaUx", c16);
+								this.EditTareaUx = c16;
+								global::Uno.UI.FrameworkElementHelper.SetBaseUri(c16, "file:///C:/MSP/2018/Uno/Git/TestTap/TestTap.Shared/MainPage.xaml");
+								c16.CreationComplete();
+							}
+							))
+							,
+							new global::Windows.UI.Xaml.Controls.Button
+							{
+								IsParsing = true
+								,
+								Name = "DeleteTareaUx",
+								Margin = new global::Windows.UI.Xaml.Thickness(10,0,0,0)/* Windows.UI.Xaml.Thickness/, 10,0,0,0, Button/Margin */,
+								Background = SolidColorBrushHelper.Transparent/* Windows.UI.Xaml.Media.Brush/, Transparent, Button/Background */,
+								// Source ..\..\..\..\..\..\..\TestTap.Shared\MainPage.xaml (Line 124:14)
+								Content = 
+								new global::Windows.UI.Xaml.Controls.SymbolIcon
+								{
+									IsParsing = true
+									,
+									Symbol = global::Windows.UI.Xaml.Controls.Symbol.Delete/* Windows.UI.Xaml.Controls.Symbol/, Delete, SymbolIcon/Symbol */,
+									// Source ..\..\..\..\..\..\..\TestTap.Shared\MainPage.xaml (Line 128:18)
+								}
+								.MainPage_e7e2a5be20f8f556339963c59d5c8580_XamlApply((MainPage_e7e2a5be20f8f556339963c59d5c8580XamlApplyExtensions.XamlApplyHandler8)(c17 => 
+								{
+									global::Uno.UI.FrameworkElementHelper.SetBaseUri(c17, "file:///C:/MSP/2018/Uno/Git/TestTap/TestTap.Shared/MainPage.xaml");
+									c17.CreationComplete();
+								}
+								))
+								,
+							}
+							.MainPage_e7e2a5be20f8f556339963c59d5c8580_XamlApply((MainPage_e7e2a5be20f8f556339963c59d5c8580XamlApplyExtensions.XamlApplyHandler9)(c18 => 
+							{
+								nameScope.RegisterName("DeleteTareaUx", c18);
+								this.DeleteTareaUx = c18;
+								global::Uno.UI.FrameworkElementHelper.SetBaseUri(c18, "file:///C:/MSP/2018/Uno/Git/TestTap/TestTap.Shared/MainPage.xaml");
+								c18.CreationComplete();
+							}
+							))
+							,
+							new global::Windows.UI.Xaml.Controls.Button
+							{
+								IsParsing = true
+								,
+								Name = "InfoUx",
+								Margin = new global::Windows.UI.Xaml.Thickness(10,0,0,0)/* Windows.UI.Xaml.Thickness/, 10,0,0,0, Button/Margin */,
+								Background = SolidColorBrushHelper.Transparent/* Windows.UI.Xaml.Media.Brush/, Transparent, Button/Background */,
+								// Source ..\..\..\..\..\..\..\TestTap.Shared\MainPage.xaml (Line 130:14)
+								Content = 
+								new global::Windows.UI.Xaml.Controls.SymbolIcon
+								{
+									IsParsing = true
+									,
+									Symbol = global::Windows.UI.Xaml.Controls.Symbol.Admin/* Windows.UI.Xaml.Controls.Symbol/, Admin, SymbolIcon/Symbol */,
+									// Source ..\..\..\..\..\..\..\TestTap.Shared\MainPage.xaml (Line 134:18)
+								}
+								.MainPage_e7e2a5be20f8f556339963c59d5c8580_XamlApply((MainPage_e7e2a5be20f8f556339963c59d5c8580XamlApplyExtensions.XamlApplyHandler8)(c19 => 
+								{
+									global::Uno.UI.FrameworkElementHelper.SetBaseUri(c19, "file:///C:/MSP/2018/Uno/Git/TestTap/TestTap.Shared/MainPage.xaml");
+									c19.CreationComplete();
+								}
+								))
+								,
+							}
+							.MainPage_e7e2a5be20f8f556339963c59d5c8580_XamlApply((MainPage_e7e2a5be20f8f556339963c59d5c8580XamlApplyExtensions.XamlApplyHandler9)(c20 => 
+							{
+								nameScope.RegisterName("InfoUx", c20);
+								this.InfoUx = c20;
+								global::Uno.UI.FrameworkElementHelper.SetBaseUri(c20, "file:///C:/MSP/2018/Uno/Git/TestTap/TestTap.Shared/MainPage.xaml");
+								c20.CreationComplete();
+							}
+							))
+							,
+							new global::Windows.UI.Xaml.Controls.Button
+							{
+								IsParsing = true
+								,
+								Name = "TestUx",
+								Margin = new global::Windows.UI.Xaml.Thickness(10,0,0,0)/* Windows.UI.Xaml.Thickness/, 10,0,0,0, Button/Margin */,
+								Background = SolidColorBrushHelper.Transparent/* Windows.UI.Xaml.Media.Brush/, Transparent, Button/Background */,
+								// Source ..\..\..\..\..\..\..\TestTap.Shared\MainPage.xaml (Line 136:14)
+								Content = 
+								new global::Windows.UI.Xaml.Controls.SymbolIcon
+								{
+									IsParsing = true
+									,
+									Symbol = global::Windows.UI.Xaml.Controls.Symbol.Admin/* Windows.UI.Xaml.Controls.Symbol/, Admin, SymbolIcon/Symbol */,
+									// Source ..\..\..\..\..\..\..\TestTap.Shared\MainPage.xaml (Line 140:18)
+								}
+								.MainPage_e7e2a5be20f8f556339963c59d5c8580_XamlApply((MainPage_e7e2a5be20f8f556339963c59d5c8580XamlApplyExtensions.XamlApplyHandler8)(c21 => 
+								{
+									global::Uno.UI.FrameworkElementHelper.SetBaseUri(c21, "file:///C:/MSP/2018/Uno/Git/TestTap/TestTap.Shared/MainPage.xaml");
+									c21.CreationComplete();
+								}
+								))
+								,
+							}
+							.MainPage_e7e2a5be20f8f556339963c59d5c8580_XamlApply((MainPage_e7e2a5be20f8f556339963c59d5c8580XamlApplyExtensions.XamlApplyHandler9)(c22 => 
+							{
+								nameScope.RegisterName("TestUx", c22);
+								this.TestUx = c22;
+								global::Uno.UI.FrameworkElementHelper.SetBaseUri(c22, "file:///C:/MSP/2018/Uno/Git/TestTap/TestTap.Shared/MainPage.xaml");
+								c22.CreationComplete();
+							}
+							))
+							,
+						}
+					}
+					.MainPage_e7e2a5be20f8f556339963c59d5c8580_XamlApply((MainPage_e7e2a5be20f8f556339963c59d5c8580XamlApplyExtensions.XamlApplyHandler10)(c23 => 
+					{
+						global::Windows.UI.Xaml.Controls.Grid.SetRow(c23, 1/* int/, 1, Grid/Row */);
+						global::Uno.UI.FrameworkElementHelper.SetBaseUri(c23, "file:///C:/MSP/2018/Uno/Git/TestTap/TestTap.Shared/MainPage.xaml");
+						c23.CreationComplete();
 					}
 					))
 					,
 				}
 			}
-			.MainPage_e7e2a5be20f8f556339963c59d5c8580_XamlApply((MainPage_e7e2a5be20f8f556339963c59d5c8580XamlApplyExtensions.XamlApplyHandler5)(c8 => 
+			.MainPage_e7e2a5be20f8f556339963c59d5c8580_XamlApply((MainPage_e7e2a5be20f8f556339963c59d5c8580XamlApplyExtensions.XamlApplyHandler6)(c24 => 
 			{
-				global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c8, global::Windows.UI.Xaml.Controls.Grid.BackgroundProperty, "ApplicationPageBackgroundThemeBrush", isThemeResourceExtension: true, context: global::TestTap.Wasm.GlobalStaticResources.__ParseContext_);
-				this._component_3 = c8;
-				global::Uno.UI.FrameworkElementHelper.SetBaseUri(c8, "file:///C:/MSP/2018/Uno/Git/TestTap/TestTap.Shared/MainPage.xaml");
-				c8.CreationComplete();
+				global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c24, global::Windows.UI.Xaml.Controls.Grid.BackgroundProperty, "ApplicationPageBackgroundThemeBrush", isThemeResourceExtension: true, context: global::TestTap.Wasm.GlobalStaticResources.__ParseContext_);
+				this._component_3 = c24;
+				global::Uno.UI.FrameworkElementHelper.SetBaseUri(c24, "file:///C:/MSP/2018/Uno/Git/TestTap/TestTap.Shared/MainPage.xaml");
+				c24.CreationComplete();
 			}
 			))
 			;
 			
 			this
-			.Apply((c9 => 
+			.Apply((c25 => 
 			{
 				// Source C:\MSP\2018\Uno\Git\TestTap\TestTap.Shared\MainPage.xaml (Line 1:2)
 				
-				// WARNING Property c9.base does not exist on {http://schemas.microsoft.com/winfx/2006/xaml/presentation}Page, the namespace is http://www.w3.org/XML/1998/namespace. This error was considered irrelevant by the XamlFileGenerator
+				// WARNING Property c25.base does not exist on {http://schemas.microsoft.com/winfx/2006/xaml/presentation}Page, the namespace is http://www.w3.org/XML/1998/namespace. This error was considered irrelevant by the XamlFileGenerator
 			}
 			))
-			.Apply((c10 => 
+			.Apply((c26 => 
 			{
 				// Class TestTap.MainPage
-				global::Uno.UI.FrameworkElementHelper.SetBaseUri(c10, "file:///C:/MSP/2018/Uno/Git/TestTap/TestTap.Shared/MainPage.xaml");
-				c10.CreationComplete();
+				global::Uno.UI.FrameworkElementHelper.SetBaseUri(c26, "file:///C:/MSP/2018/Uno/Git/TestTap/TestTap.Shared/MainPage.xaml");
+				c26.CreationComplete();
 			}
 			))
 			;
@@ -222,40 +505,160 @@ namespace TestTap
 			;
 		}
 		partial void OnInitializeCompleted();
-		private global::Windows.UI.Xaml.Data.ElementNameSubject _ListUxSubject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
-		private global::Windows.UI.Xaml.Controls.ListView ListUx
+		private global::Windows.UI.Xaml.Data.ElementNameSubject _GridColumn0UxSubject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
+		private global::Windows.UI.Xaml.Controls.ColumnDefinition GridColumn0Ux
 		{
 			get
 			{
-				return (global::Windows.UI.Xaml.Controls.ListView)_ListUxSubject.ElementInstance;
+				return (global::Windows.UI.Xaml.Controls.ColumnDefinition)_GridColumn0UxSubject.ElementInstance;
 			}
 			set
 			{
-				_ListUxSubject.ElementInstance = value;
+				_GridColumn0UxSubject.ElementInstance = value;
 			}
 		}
-		private global::Windows.UI.Xaml.Data.ElementNameSubject _ListPUxSubject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
-		private global::Windows.UI.Xaml.Controls.ListView ListPUx
+		private global::Windows.UI.Xaml.Data.ElementNameSubject _GridColumn1UxSubject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
+		private global::Windows.UI.Xaml.Controls.ColumnDefinition GridColumn1Ux
 		{
 			get
 			{
-				return (global::Windows.UI.Xaml.Controls.ListView)_ListPUxSubject.ElementInstance;
+				return (global::Windows.UI.Xaml.Controls.ColumnDefinition)_GridColumn1UxSubject.ElementInstance;
 			}
 			set
 			{
-				_ListPUxSubject.ElementInstance = value;
+				_GridColumn1UxSubject.ElementInstance = value;
 			}
 		}
-		private global::Windows.UI.Xaml.Data.ElementNameSubject _PivotUxSubject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
-		private global::Windows.UI.Xaml.Controls.Pivot PivotUx
+		private global::Windows.UI.Xaml.Data.ElementNameSubject _ListTUxSubject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
+		private global::Windows.UI.Xaml.Controls.ListView ListTUx
 		{
 			get
 			{
-				return (global::Windows.UI.Xaml.Controls.Pivot)_PivotUxSubject.ElementInstance;
+				return (global::Windows.UI.Xaml.Controls.ListView)_ListTUxSubject.ElementInstance;
 			}
 			set
 			{
-				_PivotUxSubject.ElementInstance = value;
+				_ListTUxSubject.ElementInstance = value;
+			}
+		}
+		private global::Windows.UI.Xaml.Data.ElementNameSubject _t1Subject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
+		private global::Microsoft.Toolkit.Uwp.UI.Controls.TabViewItem t1
+		{
+			get
+			{
+				return (global::Microsoft.Toolkit.Uwp.UI.Controls.TabViewItem)_t1Subject.ElementInstance;
+			}
+			set
+			{
+				_t1Subject.ElementInstance = value;
+			}
+		}
+		private global::Windows.UI.Xaml.Data.ElementNameSubject _ListT2UxSubject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
+		private global::Windows.UI.Xaml.Controls.ListView ListT2Ux
+		{
+			get
+			{
+				return (global::Windows.UI.Xaml.Controls.ListView)_ListT2UxSubject.ElementInstance;
+			}
+			set
+			{
+				_ListT2UxSubject.ElementInstance = value;
+			}
+		}
+		private global::Windows.UI.Xaml.Data.ElementNameSubject _t2Subject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
+		private global::Microsoft.Toolkit.Uwp.UI.Controls.TabViewItem t2
+		{
+			get
+			{
+				return (global::Microsoft.Toolkit.Uwp.UI.Controls.TabViewItem)_t2Subject.ElementInstance;
+			}
+			set
+			{
+				_t2Subject.ElementInstance = value;
+			}
+		}
+		private global::Windows.UI.Xaml.Data.ElementNameSubject _tabsSubject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
+		private global::Microsoft.Toolkit.Uwp.UI.Controls.TabView tabs
+		{
+			get
+			{
+				return (global::Microsoft.Toolkit.Uwp.UI.Controls.TabView)_tabsSubject.ElementInstance;
+			}
+			set
+			{
+				_tabsSubject.ElementInstance = value;
+			}
+		}
+		private global::Windows.UI.Xaml.Data.ElementNameSubject _TaskAndSeSubject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
+		private global::Windows.UI.Xaml.Controls.Frame TaskAndSe
+		{
+			get
+			{
+				return (global::Windows.UI.Xaml.Controls.Frame)_TaskAndSeSubject.ElementInstance;
+			}
+			set
+			{
+				_TaskAndSeSubject.ElementInstance = value;
+			}
+		}
+		private global::Windows.UI.Xaml.Data.ElementNameSubject _AddTareaUxSubject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
+		private global::Windows.UI.Xaml.Controls.Button AddTareaUx
+		{
+			get
+			{
+				return (global::Windows.UI.Xaml.Controls.Button)_AddTareaUxSubject.ElementInstance;
+			}
+			set
+			{
+				_AddTareaUxSubject.ElementInstance = value;
+			}
+		}
+		private global::Windows.UI.Xaml.Data.ElementNameSubject _EditTareaUxSubject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
+		private global::Windows.UI.Xaml.Controls.Button EditTareaUx
+		{
+			get
+			{
+				return (global::Windows.UI.Xaml.Controls.Button)_EditTareaUxSubject.ElementInstance;
+			}
+			set
+			{
+				_EditTareaUxSubject.ElementInstance = value;
+			}
+		}
+		private global::Windows.UI.Xaml.Data.ElementNameSubject _DeleteTareaUxSubject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
+		private global::Windows.UI.Xaml.Controls.Button DeleteTareaUx
+		{
+			get
+			{
+				return (global::Windows.UI.Xaml.Controls.Button)_DeleteTareaUxSubject.ElementInstance;
+			}
+			set
+			{
+				_DeleteTareaUxSubject.ElementInstance = value;
+			}
+		}
+		private global::Windows.UI.Xaml.Data.ElementNameSubject _InfoUxSubject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
+		private global::Windows.UI.Xaml.Controls.Button InfoUx
+		{
+			get
+			{
+				return (global::Windows.UI.Xaml.Controls.Button)_InfoUxSubject.ElementInstance;
+			}
+			set
+			{
+				_InfoUxSubject.ElementInstance = value;
+			}
+		}
+		private global::Windows.UI.Xaml.Data.ElementNameSubject _TestUxSubject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
+		private global::Windows.UI.Xaml.Controls.Button TestUx
+		{
+			get
+			{
+				return (global::Windows.UI.Xaml.Controls.Button)_TestUxSubject.ElementInstance;
+			}
+			set
+			{
+				_TestUxSubject.ElementInstance = value;
 			}
 		}
 		private class _MainPage_e7e2a5be20f8f556339963c59d5c8580_TestTapMainPageSC0
@@ -265,48 +668,200 @@ namespace TestTap
 				var nameScope = new global::Windows.UI.Xaml.NameScope();
 				_View __rootInstance = null;
 				__rootInstance = 
-				new global::Windows.UI.Xaml.Controls.StackPanel
+				new global::Windows.UI.Xaml.Controls.Grid
 				{
 					IsParsing = true
 					,
-					// Source ..\..\..\..\..\..\..\TestTap.Shared\MainPage.xaml (Line 11:14)
+					ColumnDefinitions = 
+					{
+						new global::Windows.UI.Xaml.Controls.ColumnDefinition
+						{
+							Width = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Star)/* Windows.UI.Xaml.GridLength/, *, ColumnDefinition/Width */,
+							// Source ..\..\..\..\..\..\..\TestTap.Shared\MainPage.xaml (Line 20:22)
+						}
+						,
+						new global::Windows.UI.Xaml.Controls.ColumnDefinition
+						{
+							Width = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, Auto, ColumnDefinition/Width */,
+							// Source ..\..\..\..\..\..\..\TestTap.Shared\MainPage.xaml (Line 21:22)
+						}
+						,
+					}
+					,
+					// Source ..\..\..\..\..\..\..\TestTap.Shared\MainPage.xaml (Line 18:14)
 					Children = 
 					{
-						new global::Windows.UI.Xaml.Controls.TextBlock
+						new global::Windows.UI.Xaml.Controls.StackPanel
 						{
 							IsParsing = true
 							,
-							// Source ..\..\..\..\..\..\..\TestTap.Shared\MainPage.xaml (Line 12:18)
+							Orientation = global::Windows.UI.Xaml.Controls.Orientation.Horizontal/* Windows.UI.Xaml.Controls.Orientation/, Horizontal, StackPanel/Orientation */,
+							// Source ..\..\..\..\..\..\..\TestTap.Shared\MainPage.xaml (Line 23:18)
+							Children = 
+							{
+								new global::Windows.UI.Xaml.Controls.TextBlock
+								{
+									IsParsing = true
+									,
+									// Source ..\..\..\..\..\..\..\TestTap.Shared\MainPage.xaml (Line 24:22)
+								}
+								.MainPage_e7e2a5be20f8f556339963c59d5c8580_XamlApply((MainPage_e7e2a5be20f8f556339963c59d5c8580XamlApplyExtensions.XamlApplyHandler2)(c29 => 
+								{
+									c29.SetBinding(global::Windows.UI.Xaml.Controls.TextBlock.TextProperty, new Windows.UI.Xaml.Data.Binding{ Path = @"Id"/* Windows.UI.Xaml.PropertyPath/Windows.UI.Xaml.PropertyPath, Id, /_PositionalParameters */ });
+																		global::Uno.UI.FrameworkElementHelper.SetBaseUri(c29, "file:///C:/MSP/2018/Uno/Git/TestTap/TestTap.Shared/MainPage.xaml");
+									c29.CreationComplete();
+								}
+								))
+								,
+								new global::Windows.UI.Xaml.Controls.TextBlock
+								{
+									IsParsing = true
+									,
+									Margin = new global::Windows.UI.Xaml.Thickness(0,0,10,0)/* Windows.UI.Xaml.Thickness/, 0,0,10,0, TextBlock/Margin */,
+									Text = "Click.-......."/* string/, Click.-......., TextBlock/Text */,
+									// Source ..\..\..\..\..\..\..\TestTap.Shared\MainPage.xaml (Line 25:22)
+								}
+								.MainPage_e7e2a5be20f8f556339963c59d5c8580_XamlApply((MainPage_e7e2a5be20f8f556339963c59d5c8580XamlApplyExtensions.XamlApplyHandler2)(c30 => 
+								{
+									global::Uno.UI.FrameworkElementHelper.SetBaseUri(c30, "file:///C:/MSP/2018/Uno/Git/TestTap/TestTap.Shared/MainPage.xaml");
+									c30.CreationComplete();
+								}
+								))
+								,
+							}
 						}
-						.MainPage_e7e2a5be20f8f556339963c59d5c8580_XamlApply((MainPage_e7e2a5be20f8f556339963c59d5c8580XamlApplyExtensions.XamlApplyHandler1)(c11 => 
+						.MainPage_e7e2a5be20f8f556339963c59d5c8580_XamlApply((MainPage_e7e2a5be20f8f556339963c59d5c8580XamlApplyExtensions.XamlApplyHandler10)(c31 => 
 						{
-							c11.SetBinding(global::Windows.UI.Xaml.Controls.TextBlock.TextProperty, new Windows.UI.Xaml.Data.Binding{ Path = @"Id"/* Windows.UI.Xaml.PropertyPath/Windows.UI.Xaml.PropertyPath, Id, /_PositionalParameters */ });
-														global::Uno.UI.FrameworkElementHelper.SetBaseUri(c11, "file:///C:/MSP/2018/Uno/Git/TestTap/TestTap.Shared/MainPage.xaml");
-							c11.CreationComplete();
+							global::Windows.UI.Xaml.Controls.Grid.SetColumn(c31, 0/* int/, 0, Grid/Column */);
+							global::Uno.UI.FrameworkElementHelper.SetBaseUri(c31, "file:///C:/MSP/2018/Uno/Git/TestTap/TestTap.Shared/MainPage.xaml");
+							c31.CreationComplete();
 						}
 						))
 						,
-						new global::Windows.UI.Xaml.Controls.Button
+						new global::Windows.UI.Xaml.Controls.Grid
 						{
 							IsParsing = true
 							,
-							Content = @"ClickMe"/* object/, ClickMe, Button/Content */,
-							// Source ..\..\..\..\..\..\..\TestTap.Shared\MainPage.xaml (Line 13:18)
+							// Source ..\..\..\..\..\..\..\TestTap.Shared\MainPage.xaml (Line 28:18)
+							Children = 
+							{
+								new global::Windows.UI.Xaml.Controls.StackPanel
+								{
+									IsParsing = true
+									,
+									Orientation = global::Windows.UI.Xaml.Controls.Orientation.Vertical/* Windows.UI.Xaml.Controls.Orientation/, Vertical, StackPanel/Orientation */,
+									// Source ..\..\..\..\..\..\..\TestTap.Shared\MainPage.xaml (Line 29:22)
+									Children = 
+									{
+										new global::Windows.UI.Xaml.Controls.Button
+										{
+											IsParsing = true
+											,
+											Margin = new global::Windows.UI.Xaml.Thickness(0,2,0,0)/* Windows.UI.Xaml.Thickness/, 0,2,0,0, Button/Margin */,
+											// Source ..\..\..\..\..\..\..\TestTap.Shared\MainPage.xaml (Line 30:26)
+											Content = 
+											new global::Windows.UI.Xaml.Controls.SymbolIcon
+											{
+												IsParsing = true
+												,
+												Symbol = global::Windows.UI.Xaml.Controls.Symbol.Add/* Windows.UI.Xaml.Controls.Symbol/, Add, SymbolIcon/Symbol */,
+												// Source ..\..\..\..\..\..\..\TestTap.Shared\MainPage.xaml (Line 31:30)
+											}
+											.MainPage_e7e2a5be20f8f556339963c59d5c8580_XamlApply((MainPage_e7e2a5be20f8f556339963c59d5c8580XamlApplyExtensions.XamlApplyHandler8)(c32 => 
+											{
+												global::Uno.UI.FrameworkElementHelper.SetBaseUri(c32, "file:///C:/MSP/2018/Uno/Git/TestTap/TestTap.Shared/MainPage.xaml");
+												c32.CreationComplete();
+											}
+											))
+											,
+										}
+										.MainPage_e7e2a5be20f8f556339963c59d5c8580_XamlApply((MainPage_e7e2a5be20f8f556339963c59d5c8580XamlApplyExtensions.XamlApplyHandler9)(c33 => 
+										{
+											c33.SetBinding(global::Windows.UI.Xaml.Controls.Button.CommandProperty, new Windows.UI.Xaml.Data.Binding{ Path = @"UpdateCommand"/* Windows.UI.Xaml.PropertyPath/Windows.UI.Xaml.PropertyPath, UpdateCommand, /_PositionalParameters */ });
+																						global::Uno.UI.FrameworkElementHelper.SetBaseUri(c33, "file:///C:/MSP/2018/Uno/Git/TestTap/TestTap.Shared/MainPage.xaml");
+											c33.CreationComplete();
+										}
+										))
+										,
+										new global::Windows.UI.Xaml.Controls.Button
+										{
+											IsParsing = true
+											,
+											Margin = new global::Windows.UI.Xaml.Thickness(0,2,0,0)/* Windows.UI.Xaml.Thickness/, 0,2,0,0, Button/Margin */,
+											// Source ..\..\..\..\..\..\..\TestTap.Shared\MainPage.xaml (Line 33:26)
+											Content = 
+											new global::Windows.UI.Xaml.Controls.SymbolIcon
+											{
+												IsParsing = true
+												,
+												Symbol = global::Windows.UI.Xaml.Controls.Symbol.Delete/* Windows.UI.Xaml.Controls.Symbol/, Delete, SymbolIcon/Symbol */,
+												// Source ..\..\..\..\..\..\..\TestTap.Shared\MainPage.xaml (Line 34:30)
+											}
+											.MainPage_e7e2a5be20f8f556339963c59d5c8580_XamlApply((MainPage_e7e2a5be20f8f556339963c59d5c8580XamlApplyExtensions.XamlApplyHandler8)(c34 => 
+											{
+												global::Uno.UI.FrameworkElementHelper.SetBaseUri(c34, "file:///C:/MSP/2018/Uno/Git/TestTap/TestTap.Shared/MainPage.xaml");
+												c34.CreationComplete();
+											}
+											))
+											,
+										}
+										.MainPage_e7e2a5be20f8f556339963c59d5c8580_XamlApply((MainPage_e7e2a5be20f8f556339963c59d5c8580XamlApplyExtensions.XamlApplyHandler9)(c35 => 
+										{
+											c35.SetBinding(global::Windows.UI.Xaml.Controls.Button.CommandProperty, new Windows.UI.Xaml.Data.Binding{ Path = @"DeleteCommand"/* Windows.UI.Xaml.PropertyPath/Windows.UI.Xaml.PropertyPath, DeleteCommand, /_PositionalParameters */ });
+																						global::Uno.UI.FrameworkElementHelper.SetBaseUri(c35, "file:///C:/MSP/2018/Uno/Git/TestTap/TestTap.Shared/MainPage.xaml");
+											c35.CreationComplete();
+										}
+										))
+										,
+									}
+								}
+								.MainPage_e7e2a5be20f8f556339963c59d5c8580_XamlApply((MainPage_e7e2a5be20f8f556339963c59d5c8580XamlApplyExtensions.XamlApplyHandler10)(c36 => 
+								{
+									global::Uno.UI.FrameworkElementHelper.SetBaseUri(c36, "file:///C:/MSP/2018/Uno/Git/TestTap/TestTap.Shared/MainPage.xaml");
+									c36.CreationComplete();
+								}
+								))
+								,
+							}
 						}
-						.MainPage_e7e2a5be20f8f556339963c59d5c8580_XamlApply((MainPage_e7e2a5be20f8f556339963c59d5c8580XamlApplyExtensions.XamlApplyHandler6)(c12 => 
+						.MainPage_e7e2a5be20f8f556339963c59d5c8580_XamlApply((MainPage_e7e2a5be20f8f556339963c59d5c8580XamlApplyExtensions.XamlApplyHandler6)(c37 => 
 						{
-							c12.SetBinding(global::Windows.UI.Xaml.Controls.Button.CommandProperty, new Windows.UI.Xaml.Data.Binding{ Path = @"UpdateCommand"/* Windows.UI.Xaml.PropertyPath/Windows.UI.Xaml.PropertyPath, UpdateCommand, /_PositionalParameters */ });
-														global::Uno.UI.FrameworkElementHelper.SetBaseUri(c12, "file:///C:/MSP/2018/Uno/Git/TestTap/TestTap.Shared/MainPage.xaml");
-							c12.CreationComplete();
+							global::Windows.UI.Xaml.Controls.Grid.SetColumn(c37, 1/* int/, 1, Grid/Column */);
+							global::Uno.UI.FrameworkElementHelper.SetBaseUri(c37, "file:///C:/MSP/2018/Uno/Git/TestTap/TestTap.Shared/MainPage.xaml");
+							c37.CreationComplete();
 						}
 						))
 						,
 					}
 				}
-				.MainPage_e7e2a5be20f8f556339963c59d5c8580_XamlApply((MainPage_e7e2a5be20f8f556339963c59d5c8580XamlApplyExtensions.XamlApplyHandler7)(c13 => 
+				.MainPage_e7e2a5be20f8f556339963c59d5c8580_XamlApply((MainPage_e7e2a5be20f8f556339963c59d5c8580XamlApplyExtensions.XamlApplyHandler6)(c38 => 
 				{
-					global::Uno.UI.FrameworkElementHelper.SetBaseUri(c13, "file:///C:/MSP/2018/Uno/Git/TestTap/TestTap.Shared/MainPage.xaml");
-					c13.CreationComplete();
+					global::Uno.UI.FrameworkElementHelper.SetBaseUri(c38, "file:///C:/MSP/2018/Uno/Git/TestTap/TestTap.Shared/MainPage.xaml");
+					c38.CreationComplete();
+				}
+				))
+				;
+				if (__rootInstance is DependencyObject d) Windows.UI.Xaml.NameScope.SetNameScope(d, nameScope);
+				return __rootInstance;
+			}
+		}
+		private class _MainPage_e7e2a5be20f8f556339963c59d5c8580_TestTapMainPageSC1
+		{
+			public _View Build()
+			{
+				var nameScope = new global::Windows.UI.Xaml.NameScope();
+				_View __rootInstance = null;
+				__rootInstance = 
+				new global::TestTap.Shared.UserControls.TestUserControl
+				{
+					IsParsing = true
+					,
+					// Source ..\..\..\..\..\..\..\TestTap.Shared\MainPage.xaml (Line 99:34)
+				}
+				.MainPage_e7e2a5be20f8f556339963c59d5c8580_XamlApply((MainPage_e7e2a5be20f8f556339963c59d5c8580XamlApplyExtensions.XamlApplyHandler11)(c39 => 
+				{
+					global::Uno.UI.FrameworkElementHelper.SetBaseUri(c39, "file:///C:/MSP/2018/Uno/Git/TestTap/TestTap.Shared/MainPage.xaml");
+					c39.CreationComplete();
 				}
 				))
 				;
@@ -368,51 +923,79 @@ namespace TestTap.Wasm
 			handler(instance);
 			return instance;
 		}
-		public delegate void XamlApplyHandler1(global::Windows.UI.Xaml.Controls.TextBlock instance);
+		public delegate void XamlApplyHandler1(global::Windows.UI.Xaml.Controls.ColumnDefinition instance);
 		[System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
-		public static global::Windows.UI.Xaml.Controls.TextBlock MainPage_e7e2a5be20f8f556339963c59d5c8580_XamlApply(this global::Windows.UI.Xaml.Controls.TextBlock instance, XamlApplyHandler1 handler)
+		public static global::Windows.UI.Xaml.Controls.ColumnDefinition MainPage_e7e2a5be20f8f556339963c59d5c8580_XamlApply(this global::Windows.UI.Xaml.Controls.ColumnDefinition instance, XamlApplyHandler1 handler)
 		{
 			handler(instance);
 			return instance;
 		}
-		public delegate void XamlApplyHandler2(global::Windows.UI.Xaml.Controls.ListView instance);
+		public delegate void XamlApplyHandler2(global::Windows.UI.Xaml.Controls.TextBlock instance);
 		[System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
-		public static global::Windows.UI.Xaml.Controls.ListView MainPage_e7e2a5be20f8f556339963c59d5c8580_XamlApply(this global::Windows.UI.Xaml.Controls.ListView instance, XamlApplyHandler2 handler)
+		public static global::Windows.UI.Xaml.Controls.TextBlock MainPage_e7e2a5be20f8f556339963c59d5c8580_XamlApply(this global::Windows.UI.Xaml.Controls.TextBlock instance, XamlApplyHandler2 handler)
 		{
 			handler(instance);
 			return instance;
 		}
-		public delegate void XamlApplyHandler3(global::Windows.UI.Xaml.Controls.PivotItem instance);
+		public delegate void XamlApplyHandler3(global::Windows.UI.Xaml.Controls.ListView instance);
 		[System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
-		public static global::Windows.UI.Xaml.Controls.PivotItem MainPage_e7e2a5be20f8f556339963c59d5c8580_XamlApply(this global::Windows.UI.Xaml.Controls.PivotItem instance, XamlApplyHandler3 handler)
+		public static global::Windows.UI.Xaml.Controls.ListView MainPage_e7e2a5be20f8f556339963c59d5c8580_XamlApply(this global::Windows.UI.Xaml.Controls.ListView instance, XamlApplyHandler3 handler)
 		{
 			handler(instance);
 			return instance;
 		}
-		public delegate void XamlApplyHandler4(global::Windows.UI.Xaml.Controls.Pivot instance);
+		public delegate void XamlApplyHandler4(global::Microsoft.Toolkit.Uwp.UI.Controls.TabViewItem instance);
 		[System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
-		public static global::Windows.UI.Xaml.Controls.Pivot MainPage_e7e2a5be20f8f556339963c59d5c8580_XamlApply(this global::Windows.UI.Xaml.Controls.Pivot instance, XamlApplyHandler4 handler)
+		public static global::Microsoft.Toolkit.Uwp.UI.Controls.TabViewItem MainPage_e7e2a5be20f8f556339963c59d5c8580_XamlApply(this global::Microsoft.Toolkit.Uwp.UI.Controls.TabViewItem instance, XamlApplyHandler4 handler)
 		{
 			handler(instance);
 			return instance;
 		}
-		public delegate void XamlApplyHandler5(global::Windows.UI.Xaml.Controls.Grid instance);
+		public delegate void XamlApplyHandler5(global::Microsoft.Toolkit.Uwp.UI.Controls.TabView instance);
 		[System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
-		public static global::Windows.UI.Xaml.Controls.Grid MainPage_e7e2a5be20f8f556339963c59d5c8580_XamlApply(this global::Windows.UI.Xaml.Controls.Grid instance, XamlApplyHandler5 handler)
+		public static global::Microsoft.Toolkit.Uwp.UI.Controls.TabView MainPage_e7e2a5be20f8f556339963c59d5c8580_XamlApply(this global::Microsoft.Toolkit.Uwp.UI.Controls.TabView instance, XamlApplyHandler5 handler)
 		{
 			handler(instance);
 			return instance;
 		}
-		public delegate void XamlApplyHandler6(global::Windows.UI.Xaml.Controls.Button instance);
+		public delegate void XamlApplyHandler6(global::Windows.UI.Xaml.Controls.Grid instance);
 		[System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
-		public static global::Windows.UI.Xaml.Controls.Button MainPage_e7e2a5be20f8f556339963c59d5c8580_XamlApply(this global::Windows.UI.Xaml.Controls.Button instance, XamlApplyHandler6 handler)
+		public static global::Windows.UI.Xaml.Controls.Grid MainPage_e7e2a5be20f8f556339963c59d5c8580_XamlApply(this global::Windows.UI.Xaml.Controls.Grid instance, XamlApplyHandler6 handler)
 		{
 			handler(instance);
 			return instance;
 		}
-		public delegate void XamlApplyHandler7(global::Windows.UI.Xaml.Controls.StackPanel instance);
+		public delegate void XamlApplyHandler7(global::Windows.UI.Xaml.Controls.Frame instance);
 		[System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
-		public static global::Windows.UI.Xaml.Controls.StackPanel MainPage_e7e2a5be20f8f556339963c59d5c8580_XamlApply(this global::Windows.UI.Xaml.Controls.StackPanel instance, XamlApplyHandler7 handler)
+		public static global::Windows.UI.Xaml.Controls.Frame MainPage_e7e2a5be20f8f556339963c59d5c8580_XamlApply(this global::Windows.UI.Xaml.Controls.Frame instance, XamlApplyHandler7 handler)
+		{
+			handler(instance);
+			return instance;
+		}
+		public delegate void XamlApplyHandler8(global::Windows.UI.Xaml.Controls.SymbolIcon instance);
+		[System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+		public static global::Windows.UI.Xaml.Controls.SymbolIcon MainPage_e7e2a5be20f8f556339963c59d5c8580_XamlApply(this global::Windows.UI.Xaml.Controls.SymbolIcon instance, XamlApplyHandler8 handler)
+		{
+			handler(instance);
+			return instance;
+		}
+		public delegate void XamlApplyHandler9(global::Windows.UI.Xaml.Controls.Button instance);
+		[System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+		public static global::Windows.UI.Xaml.Controls.Button MainPage_e7e2a5be20f8f556339963c59d5c8580_XamlApply(this global::Windows.UI.Xaml.Controls.Button instance, XamlApplyHandler9 handler)
+		{
+			handler(instance);
+			return instance;
+		}
+		public delegate void XamlApplyHandler10(global::Windows.UI.Xaml.Controls.StackPanel instance);
+		[System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+		public static global::Windows.UI.Xaml.Controls.StackPanel MainPage_e7e2a5be20f8f556339963c59d5c8580_XamlApply(this global::Windows.UI.Xaml.Controls.StackPanel instance, XamlApplyHandler10 handler)
+		{
+			handler(instance);
+			return instance;
+		}
+		public delegate void XamlApplyHandler11(global::TestTap.Shared.UserControls.TestUserControl instance);
+		[System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+		public static global::TestTap.Shared.UserControls.TestUserControl MainPage_e7e2a5be20f8f556339963c59d5c8580_XamlApply(this global::TestTap.Shared.UserControls.TestUserControl instance, XamlApplyHandler11 handler)
 		{
 			handler(instance);
 			return instance;

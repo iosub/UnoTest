@@ -28,6 +28,12 @@
     <AppxPackagedFile Include="C:\MSP\2018\Uno\Git\TestTap\TestTap.UWP\bin\x86\Debug\TestTap.exe">
       <PackagePath>entrypoint\TestTap.exe</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\iosuc\.nuget\packages\colorcode.core\2.0.6\lib\netstandard1.4\ColorCode.Core.dll">
+      <PackagePath>ColorCode.Core.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\iosuc\.nuget\packages\colorcode.uwp\2.0.6\lib\uap10.0\ColorCode.UWP.dll">
+      <PackagePath>ColorCode.UWP.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\iosuc\.nuget\packages\commonservicelocator\2.0.5\lib\netstandard2.0\CommonServiceLocator.dll">
       <PackagePath>CommonServiceLocator.dll</PackagePath>
     </AppxPackagedFile>
@@ -52,10 +58,19 @@
     <AppxPackagedFile Include="C:\Users\iosuc\.nuget\packages\microsoft.extensions.primitives\1.1.0\lib\netstandard1.0\Microsoft.Extensions.Primitives.dll">
       <PackagePath>Microsoft.Extensions.Primitives.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\iosuc\.nuget\packages\microsoft.xaml.behaviors.uwp.managed\2.0.1\lib\uap10.0\Microsoft.Xaml.Interactions.dll">
+      <PackagePath>Microsoft.Xaml.Interactions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\iosuc\.nuget\packages\microsoft.xaml.behaviors.uwp.managed\2.0.1\lib\uap10.0\Microsoft.Xaml.Interactivity.dll">
+      <PackagePath>Microsoft.Xaml.Interactivity.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\iosuc\.nuget\packages\newtonsoft.json\10.0.3\lib\netstandard1.3\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\iosuc\.nuget\packages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.9\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\iosuc\.nuget\packages\system.runtime.compilerservices.unsafe\4.5.2\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll">
+    <AppxPackagedFile Include="C:\Users\iosuc\.nuget\packages\system.runtime.compilerservices.unsafe\4.5.3\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll">
       <PackagePath>System.Runtime.CompilerServices.Unsafe.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\iosuc\.nuget\packages\uno.core\2.0.0\lib\uap10.0\Uno.Core.dll">
@@ -64,11 +79,38 @@
     <AppxPackagedFile Include="C:\Users\iosuc\.nuget\packages\uno.diagnostics.eventing\1.0.4\lib\netstandard2.0\Uno.Diagnostics.Eventing.dll">
       <PackagePath>Uno.Diagnostics.Eventing.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\iosuc\.nuget\packages\uno.microsoft.toolkit\6.1.0-build.191.gc988bdd4ff\lib\netstandard2.0\Microsoft.Toolkit.dll">
+      <PackagePath>Microsoft.Toolkit.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\iosuc\.nuget\packages\uno.microsoft.toolkit.parsers\6.1.0-build.191.gc988bdd4ff\lib\netstandard2.0\Microsoft.Toolkit.Parsers.dll">
+      <PackagePath>Microsoft.Toolkit.Parsers.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\iosuc\.nuget\packages\uno.microsoft.toolkit.uwp\6.1.0-build.191.gc988bdd4ff\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.dll">
+      <PackagePath>Microsoft.Toolkit.Uwp.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\iosuc\.nuget\packages\uno.microsoft.toolkit.uwp.ui\6.1.0-build.191.gc988bdd4ff\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.dll">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\iosuc\.nuget\packages\uno.microsoft.toolkit.uwp.ui.animations\6.1.0-build.191.gc988bdd4ff\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Animations.dll">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Animations.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\iosuc\.nuget\packages\uno.microsoft.toolkit.uwp.ui.controls\6.1.0-build.191.gc988bdd4ff\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls.dll">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\iosuc\.nuget\packages\uno.ui\3.2.0-dev.441\lib\UAP\Uno.UI.Toolkit.dll">
       <PackagePath>Uno.UI.Toolkit.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\iosuc\.nuget\packages\win2d.uwp\1.25.0\runtimes\win10-x86\native\Microsoft.Graphics.Canvas.dll">
+      <PackagePath>Microsoft.Graphics.Canvas.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\iosuc\.nuget\packages\win2d.uwp\1.25.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
+      <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.17763.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\iosuc\.nuget\packages\uno.microsoft.toolkit.uwp.ui.controls\6.1.0-build.191.gc988bdd4ff\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls\Microsoft.Toolkit.Uwp.UI.Controls.xr.xml">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\Microsoft.Toolkit.Uwp.UI.Controls.xr.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\iosuc\.nuget\packages\uno.ui\3.2.0-dev.441\lib\UAP\Uno.UI.Toolkit\Uno.UI.Toolkit.xr.xml">
       <PackagePath>Uno.UI.Toolkit\Uno.UI.Toolkit.xr.xml</PackagePath>
@@ -107,6 +149,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\MSP\2018\Uno\Git\TestTap\TestTap.UWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\MSP\2018\Uno\Git\TestTap\TestTap.UWP\bin\x86\Debug\UserControls\TestUserControl.xbf">
+      <PackagePath>UserControls\TestUserControl.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\MSP\2018\Uno\Git\TestTap\TestTap.UWP\bin\x86\Debug\Views\TestViewPivot.xbf">
       <PackagePath>Views\TestViewPivot.xbf</PackagePath>

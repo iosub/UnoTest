@@ -60,6 +60,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Uno.Microsoft.Toolkit.Uwp">
+      <Version>6.1.0-build.191.gc988bdd4ff</Version>
+    </PackageReference>
+    <PackageReference Include="Uno.Microsoft.Toolkit.Uwp.UI.Controls">
+      <Version>6.1.0-build.191.gc988bdd4ff</Version>
+    </PackageReference>
     <PackageReference Include="Uno.UI" Version="3.2.0-dev.441" />
     <PackageReference Include="Uno.UI.RemoteControl" Version="3.2.0-dev.441" Condition="'$(Configuration)'=='Debug'" />
     <PackageReference Include="Uno.UniversalImageLoader" Version="1.9.33" />

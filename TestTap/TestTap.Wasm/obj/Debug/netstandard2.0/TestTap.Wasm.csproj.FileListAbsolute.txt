@@ -142,9 +142,19 @@ C:\MSP\2018\Uno\Git\TestTap\TestTap.Wasm\bin\Debug\netstandard2.0\System.Reflect
 C:\MSP\2018\Uno\Git\TestTap\TestTap.Wasm\bin\Debug\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll
 C:\MSP\2018\Uno\Git\TestTap\TestTap.Wasm\bin\Debug\netstandard2.0\System.Runtime.InteropServices.WindowsRuntime.dll
 C:\MSP\2018\Uno\Git\TestTap\TestTap.Wasm\bin\Debug\netstandard2.0\System.Threading.dll
+C:\MSP\2018\Uno\Git\TestTap\TestTap.Wasm\bin\Debug\netstandard2.0\ColorCode.Core.dll
+C:\MSP\2018\Uno\Git\TestTap\TestTap.Wasm\bin\Debug\netstandard2.0\ColorCode.UWP.dll
 C:\MSP\2018\Uno\Git\TestTap\TestTap.Wasm\bin\Debug\netstandard2.0\Uno.Core.dll
 C:\MSP\2018\Uno\Git\TestTap\TestTap.Wasm\bin\Debug\netstandard2.0\Uno.Diagnostics.Eventing.dll
 C:\MSP\2018\Uno\Git\TestTap\TestTap.Wasm\bin\Debug\netstandard2.0\Uno.Foundation.Runtime.WebAssembly.dll
+C:\MSP\2018\Uno\Git\TestTap\TestTap.Wasm\bin\Debug\netstandard2.0\Microsoft.Toolkit.dll
+C:\MSP\2018\Uno\Git\TestTap\TestTap.Wasm\bin\Debug\netstandard2.0\Microsoft.Toolkit.Parsers.dll
+C:\MSP\2018\Uno\Git\TestTap\TestTap.Wasm\bin\Debug\netstandard2.0\Microsoft.Toolkit.Uwp.dll
+C:\MSP\2018\Uno\Git\TestTap\TestTap.Wasm\bin\Debug\netstandard2.0\Microsoft.Toolkit.Uwp.UI.dll
+C:\MSP\2018\Uno\Git\TestTap\TestTap.Wasm\bin\Debug\netstandard2.0\Microsoft.Toolkit.Uwp.UI.Animations.dll
+C:\MSP\2018\Uno\Git\TestTap\TestTap.Wasm\bin\Debug\netstandard2.0\Microsoft.Toolkit.Uwp.UI.Controls.dll
+C:\MSP\2018\Uno\Git\TestTap\TestTap.Wasm\bin\Debug\netstandard2.0\Microsoft.Xaml.Interactivity.dll
+C:\MSP\2018\Uno\Git\TestTap\TestTap.Wasm\bin\Debug\netstandard2.0\Microsoft.Xaml.Interactions.dll
 C:\MSP\2018\Uno\Git\TestTap\TestTap.Wasm\bin\Debug\netstandard2.0\Uno.UI.Runtime.WebAssembly.dll
 C:\MSP\2018\Uno\Git\TestTap\TestTap.Wasm\bin\Debug\netstandard2.0\Uno.Wasm.WebSockets.dll
 C:\MSP\2018\Uno\Git\TestTap\TestTap.Wasm\bin\Debug\netstandard2.0\Uno.dll
@@ -162,3 +172,6 @@ C:\MSP\2018\Uno\Git\TestTap\TestTap.Wasm\obj\Debug\netstandard2.0\TestTap.Wasm.c
 C:\MSP\2018\Uno\Git\TestTap\TestTap.Wasm\obj\Debug\netstandard2.0\TestTap.Wasm.csproj.CopyComplete
 C:\MSP\2018\Uno\Git\TestTap\TestTap.Wasm\obj\Debug\netstandard2.0\TestTap.Wasm.dll
 C:\MSP\2018\Uno\Git\TestTap\TestTap.Wasm\obj\Debug\netstandard2.0\TestTap.Wasm.pdb
+C:\MSP\2018\Uno\Git\TestTap\TestTap.Wasm\bin\Debug\netstandard2.0\Uno.UI.Lottie.pdb
+C:\MSP\2018\Uno\Git\TestTap\TestTap.Wasm\bin\Debug\netstandard2.0\Uno.Material.dll
+C:\MSP\2018\Uno\Git\TestTap\TestTap.Wasm\bin\Debug\netstandard2.0\Uno.UI.Lottie.dll

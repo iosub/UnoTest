@@ -104,7 +104,7 @@ namespace TestTap.Shared.Views
 						IsParsing = true
 						,
 						Name = "ListUx",
-						// Source ..\..\..\..\..\..\..\TestTap.Shared\Views\TestViewPivot.xaml (Line 31:10)
+						// Source ..\..\..\..\..\..\..\TestTap.Shared\Views\TestViewPivot.xaml (Line 30:10)
 					}
 					.TestViewPivot_ccddd6bf2540d9b2cabccfdb863ab22c_XamlApply((TestViewPivot_ccddd6bf2540d9b2cabccfdb863ab22cXamlApplyExtensions.XamlApplyHandler2)(c3 => 
 					{

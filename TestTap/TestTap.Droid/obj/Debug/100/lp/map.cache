@@ -76,3 +76,11 @@ androidx.appcompat.appcompat-resources
 androidx.appcompat.appcompat
 Xamarin.AndroidX.Lifecycle.ViewModelSavedState
 androidx.lifecycle.lifecycle-viewmodel-savedstate
+ColorCode.Core
+ColorCode.UWP
+Microsoft.Toolkit.Uwp
+Microsoft.Toolkit.Uwp.UI.Animations
+Microsoft.Toolkit.Uwp.UI.Controls
+Microsoft.Toolkit.Uwp.UI
+Microsoft.Xaml.Interactions
+Microsoft.Xaml.Interactivity
