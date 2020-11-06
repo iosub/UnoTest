@@ -1,0 +1,98 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\MSP\\2018\\Uno\\Git\\TestTap\\TestTap.UWP\\TestTap.UWP.csproj": {}
+  },
+  "projects": {
+    "C:\\MSP\\2018\\Uno\\Git\\TestTap\\TestTap.UWP\\TestTap.UWP.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\MSP\\2018\\Uno\\Git\\TestTap\\TestTap.UWP\\TestTap.UWP.csproj",
+        "projectName": "TestTap.UWP",
+        "projectPath": "C:\\MSP\\2018\\Uno\\Git\\TestTap\\TestTap.UWP\\TestTap.UWP.csproj",
+        "packagesPath": "C:\\Users\\iosuc\\.nuget\\packages\\",
+        "outputPath": "C:\\MSP\\2018\\Uno\\Git\\TestTap\\TestTap.UWP\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Progress\\ToolboxNugetPackages",
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\iosuc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Telerik UI for WPF.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "uap10.0.17763"
+        ],
+        "sources": {
+          "C:\\MSP\\2018\\Dev\\Dev\\LIB\\Nuget": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "uap10.0.17763": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "uap10.0.17763": {
+          "dependencies": {
+            "Microsoft.Extensions.Logging.Console": {
+              "target": "Package",
+              "version": "[1.1.1, )"
+            },
+            "Microsoft.Extensions.Logging.Filter": {
+              "target": "Package",
+              "version": "[1.1.1, )"
+            },
+            "Microsoft.NETCore.UniversalWindowsPlatform": {
+              "target": "Package",
+              "version": "[6.2.9, )"
+            },
+            "Uno.Core": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
+            "Uno.UI": {
+              "target": "Package",
+              "version": "[3.2.0-dev.441, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      },
+      "runtimes": {
+        "win10-arm": {
+          "#import": []
+        },
+        "win10-arm-aot": {
+          "#import": []
+        },
+        "win10-arm64-aot": {
+          "#import": []
+        },
+        "win10-x64": {
+          "#import": []
+        },
+        "win10-x64-aot": {
+          "#import": []
+        },
+        "win10-x86": {
+          "#import": []
+        },
+        "win10-x86-aot": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

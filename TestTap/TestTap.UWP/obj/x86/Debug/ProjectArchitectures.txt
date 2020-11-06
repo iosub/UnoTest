@@ -1,0 +1,1 @@
+C:\MSP\2018\Uno\Git\TestTap\TestTap.UWP\TestTap.UWP.csproj;x86

@@ -10,9 +10,9 @@
         <DataTemplate x:Key="ListViewItemTemplate1">
             <StackPanel>
                 <TextBlock Text="{Binding Id}" />
-                <Button Command="{Binding UpdateCommand}" Content="ClickMe"/>
+                <Button Command="{Binding UpdateCommand}" Content="ClickMe" />
             </StackPanel>
-            
+
         </DataTemplate>
     </Page.Resources>
 
@@ -20,16 +20,26 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="50" />
             <RowDefinition Height="200" />
+            <RowDefinition Height="200" />
+            <RowDefinition Height="200" />
         </Grid.RowDefinitions>
         <TextBlock
             Grid.Row="0"
-            
             FontSize="30"
-            Text="{x:Bind ViewModel.TestValue,Mode=OneWay}" />
+            Text="{x:Bind ViewModel.TestValue, Mode=OneWay}" />
         <ListView
             x:Name="ListUx"
             Grid.Row="1"
             ItemTemplate="{StaticResource ListViewItemTemplate1}"
             ItemsSource="{Binding TestList}" />
+        <Pivot x:Name="PivotUx" Grid.Row="2">
+            <PivotItem Header="P1">
+                <ListView
+                    x:Name="ListPUx"
+                    Grid.Row="1"
+                    ItemTemplate="{StaticResource ListViewItemTemplate1}"
+                    ItemsSource="{Binding TestList}" />
+            </PivotItem>
+        </Pivot>
     </Grid>
 </Page>

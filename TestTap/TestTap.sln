@@ -17,7 +17,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestTap.macOS", "TestTap.ma
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		TestTap.Shared\TestTap.Shared.projitems*{35119a6a-2c88-4009-ae0a-2abdd022112e}*SharedItemsImports = 4
 		TestTap.Shared\TestTap.Shared.projitems*{6279c845-92f8-4333-ab99-3d213163593c}*SharedItemsImports = 13
+		TestTap.Shared\TestTap.Shared.projitems*{6eefa4bc-a08c-49c7-a568-a2478b27cec0}*SharedItemsImports = 4
+		TestTap.Shared\TestTap.Shared.projitems*{789e6c37-6b7c-42d1-9644-ed885e8d4f23}*SharedItemsImports = 4
 		TestTap.Shared\TestTap.Shared.projitems*{a934bdc9-d2a3-4846-be7e-fb3d573f4140}*SharedItemsImports = 4
 		TestTap.Shared\TestTap.Shared.projitems*{ece67fd9-86a2-45fa-8829-289f6fd0ea9c}*SharedItemsImports = 5
 	EndGlobalSection

@@ -31,9 +31,16 @@
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Data\TestModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\TestViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\TestViewPivot.xaml.cs">
+      <DependentUpon>TestViewPivot.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Include="$(MSBuildThisFileDirectory)MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Views\TestViewPivot.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
