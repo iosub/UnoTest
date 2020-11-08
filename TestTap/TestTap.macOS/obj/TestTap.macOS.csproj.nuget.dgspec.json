@@ -59,11 +59,11 @@
             },
             "Uno.UI": {
               "target": "Package",
-              "version": "[3.2.0-dev.441, )"
+              "version": "[3.2.0-dev.443, )"
             },
             "Uno.UI.RemoteControl": {
               "target": "Package",
-              "version": "[3.2.0-dev.441, )"
+              "version": "[3.2.0-dev.443, )"
             }
           }
         }

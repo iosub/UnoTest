@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "2dE06ALs5Jo2AFnkQc8jjuTa7oVIT5bVdymxC/Hvs94LxSqkKIc5jwH1XiGnNdu+NnIrHCYaVav1Ahu3hCmYdg==",
+  "dgSpecHash": "KqyTchmIbphmm1ExttBauEQUAMb4/lKDEBkzKjhIBpAXSe1rfbqN7VY/J3dYbl1IYHdPWfxLQtymDGUC2UGfBw==",
   "success": true,
   "projectFilePath": "C:\\MSP\\2018\\Uno\\Git\\TestTap\\TestTap.macOS\\TestTap.macOS.csproj",
   "expectedPackageFiles": [
@@ -79,8 +79,8 @@
     "C:\\Users\\iosuc\\.nuget\\packages\\uno.microsoft.xaml.behaviors.interactivity\\2.0.2-uno.74\\uno.microsoft.xaml.behaviors.interactivity.2.0.2-uno.74.nupkg.sha512",
     "C:\\Users\\iosuc\\.nuget\\packages\\uno.microsoft.xaml.behaviors.uwp.managed\\2.0.2-uno.74\\uno.microsoft.xaml.behaviors.uwp.managed.2.0.2-uno.74.nupkg.sha512",
     "C:\\Users\\iosuc\\.nuget\\packages\\uno.sourcegenerationtasks\\3.0.0-dev.18\\uno.sourcegenerationtasks.3.0.0-dev.18.nupkg.sha512",
-    "C:\\Users\\iosuc\\.nuget\\packages\\uno.ui\\3.2.0-dev.441\\uno.ui.3.2.0-dev.441.nupkg.sha512",
-    "C:\\Users\\iosuc\\.nuget\\packages\\uno.ui.remotecontrol\\3.2.0-dev.441\\uno.ui.remotecontrol.3.2.0-dev.441.nupkg.sha512"
+    "C:\\Users\\iosuc\\.nuget\\packages\\uno.ui\\3.2.0-dev.443\\uno.ui.3.2.0-dev.443.nupkg.sha512",
+    "C:\\Users\\iosuc\\.nuget\\packages\\uno.ui.remotecontrol\\3.2.0-dev.443\\uno.ui.remotecontrol.3.2.0-dev.443.nupkg.sha512"
   ],
   "logs": []
 }
