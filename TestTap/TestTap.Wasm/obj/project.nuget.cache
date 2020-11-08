@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "YFFroBSvnaibZ6wrmKGmEQQetlD/Kwb2JVaDaVXHGQLUS1fvawOjMKVaTyEsAkphzsQbqFL8ansLUVX6UtRevA==",
+  "dgSpecHash": "wDJghalU/x3THkaN8KaS0Et5VPVEgI5jf9cz4Sz68QrwY77g1uoaZ/1KsOqUcN4atYOXfaIEszi8raRfMqQDOA==",
   "success": true,
   "projectFilePath": "C:\\MSP\\2018\\Uno\\Git\\TestTap\\TestTap.Wasm\\TestTap.Wasm.csproj",
   "expectedPackageFiles": [
@@ -44,7 +44,7 @@
     "C:\\Users\\iosuc\\.nuget\\packages\\uno.core\\2.0.0\\uno.core.2.0.0.nupkg.sha512",
     "C:\\Users\\iosuc\\.nuget\\packages\\uno.core.build\\2.0.0\\uno.core.build.2.0.0.nupkg.sha512",
     "C:\\Users\\iosuc\\.nuget\\packages\\uno.diagnostics.eventing\\1.0.4\\uno.diagnostics.eventing.1.0.4.nupkg.sha512",
-    "C:\\Users\\iosuc\\.nuget\\packages\\uno.foundation.runtime.webassembly\\3.2.0-dev.241\\uno.foundation.runtime.webassembly.3.2.0-dev.241.nupkg.sha512",
+    "C:\\Users\\iosuc\\.nuget\\packages\\uno.foundation.runtime.webassembly\\3.2.0-dev.443\\uno.foundation.runtime.webassembly.3.2.0-dev.443.nupkg.sha512",
     "C:\\Users\\iosuc\\.nuget\\packages\\uno.material\\1.0.0-dev.578\\uno.material.1.0.0-dev.578.nupkg.sha512",
     "C:\\Users\\iosuc\\.nuget\\packages\\uno.microsoft.toolkit\\6.1.0-build.191.gc988bdd4ff\\uno.microsoft.toolkit.6.1.0-build.191.gc988bdd4ff.nupkg.sha512",
     "C:\\Users\\iosuc\\.nuget\\packages\\uno.microsoft.toolkit.parsers\\6.1.0-build.191.gc988bdd4ff\\uno.microsoft.toolkit.parsers.6.1.0-build.191.gc988bdd4ff.nupkg.sha512",
@@ -55,13 +55,13 @@
     "C:\\Users\\iosuc\\.nuget\\packages\\uno.microsoft.xaml.behaviors.interactivity\\2.0.2-uno.74\\uno.microsoft.xaml.behaviors.interactivity.2.0.2-uno.74.nupkg.sha512",
     "C:\\Users\\iosuc\\.nuget\\packages\\uno.microsoft.xaml.behaviors.uwp.managed\\2.0.2-uno.74\\uno.microsoft.xaml.behaviors.uwp.managed.2.0.2-uno.74.nupkg.sha512",
     "C:\\Users\\iosuc\\.nuget\\packages\\uno.sourcegenerationtasks\\3.0.0-dev.18\\uno.sourcegenerationtasks.3.0.0-dev.18.nupkg.sha512",
-    "C:\\Users\\iosuc\\.nuget\\packages\\uno.ui\\3.2.0-dev.241\\uno.ui.3.2.0-dev.241.nupkg.sha512",
-    "C:\\Users\\iosuc\\.nuget\\packages\\uno.ui.lottie\\3.2.0-dev.241\\uno.ui.lottie.3.2.0-dev.241.nupkg.sha512",
-    "C:\\Users\\iosuc\\.nuget\\packages\\uno.ui.remotecontrol\\3.2.0-dev.241\\uno.ui.remotecontrol.3.2.0-dev.241.nupkg.sha512",
-    "C:\\Users\\iosuc\\.nuget\\packages\\uno.ui.runtime.webassembly\\3.2.0-dev.241\\uno.ui.runtime.webassembly.3.2.0-dev.241.nupkg.sha512",
-    "C:\\Users\\iosuc\\.nuget\\packages\\uno.ui.webassembly\\3.2.0-dev.241\\uno.ui.webassembly.3.2.0-dev.241.nupkg.sha512",
-    "C:\\Users\\iosuc\\.nuget\\packages\\uno.wasm.bootstrap\\1.5.0-dev.57\\uno.wasm.bootstrap.1.5.0-dev.57.nupkg.sha512",
-    "C:\\Users\\iosuc\\.nuget\\packages\\uno.wasm.bootstrap.devserver\\1.5.0-dev.57\\uno.wasm.bootstrap.devserver.1.5.0-dev.57.nupkg.sha512",
+    "C:\\Users\\iosuc\\.nuget\\packages\\uno.ui\\3.2.0-dev.443\\uno.ui.3.2.0-dev.443.nupkg.sha512",
+    "C:\\Users\\iosuc\\.nuget\\packages\\uno.ui.lottie\\3.2.0-dev.443\\uno.ui.lottie.3.2.0-dev.443.nupkg.sha512",
+    "C:\\Users\\iosuc\\.nuget\\packages\\uno.ui.remotecontrol\\3.2.0-dev.443\\uno.ui.remotecontrol.3.2.0-dev.443.nupkg.sha512",
+    "C:\\Users\\iosuc\\.nuget\\packages\\uno.ui.runtime.webassembly\\3.2.0-dev.443\\uno.ui.runtime.webassembly.3.2.0-dev.443.nupkg.sha512",
+    "C:\\Users\\iosuc\\.nuget\\packages\\uno.ui.webassembly\\3.2.0-dev.443\\uno.ui.webassembly.3.2.0-dev.443.nupkg.sha512",
+    "C:\\Users\\iosuc\\.nuget\\packages\\uno.wasm.bootstrap\\2.0.0-dev.67\\uno.wasm.bootstrap.2.0.0-dev.67.nupkg.sha512",
+    "C:\\Users\\iosuc\\.nuget\\packages\\uno.wasm.bootstrap.devserver\\2.0.0-dev.67\\uno.wasm.bootstrap.devserver.2.0.0-dev.67.nupkg.sha512",
     "C:\\Users\\iosuc\\.nuget\\packages\\uno.wasm.websockets\\1.0.0-dev.30\\uno.wasm.websockets.1.0.0-dev.30.nupkg.sha512"
   ],
   "logs": []

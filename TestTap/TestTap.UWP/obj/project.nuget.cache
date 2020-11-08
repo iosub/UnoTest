@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "UYflVEMqZjgHlWs9WTznELSsR0GmNTYcL9mAE3vRaKTa4MK39jy2NVV0uOOBiN9o8BDum8FXkpYmXm7dTRUgRQ==",
+  "dgSpecHash": "Jg+KCdmi1wGMGi9dnkNp7kIW51yDV83ObLDMRD4UBDNqoUskKQjjSarPSS6pTUDshtzMvRpXtMkceYcTlgM98w==",
   "success": true,
   "projectFilePath": "C:\\MSP\\2018\\Uno\\Git\\TestTap\\TestTap.UWP\\TestTap.UWP.csproj",
   "expectedPackageFiles": [
@@ -126,7 +126,7 @@
     "C:\\Users\\iosuc\\.nuget\\packages\\uno.microsoft.toolkit.uwp.ui.animations\\6.1.0-build.191.gc988bdd4ff\\uno.microsoft.toolkit.uwp.ui.animations.6.1.0-build.191.gc988bdd4ff.nupkg.sha512",
     "C:\\Users\\iosuc\\.nuget\\packages\\uno.microsoft.toolkit.uwp.ui.controls\\6.1.0-build.191.gc988bdd4ff\\uno.microsoft.toolkit.uwp.ui.controls.6.1.0-build.191.gc988bdd4ff.nupkg.sha512",
     "C:\\Users\\iosuc\\.nuget\\packages\\uno.sourcegenerationtasks\\3.0.0-dev.18\\uno.sourcegenerationtasks.3.0.0-dev.18.nupkg.sha512",
-    "C:\\Users\\iosuc\\.nuget\\packages\\uno.ui\\3.2.0-dev.441\\uno.ui.3.2.0-dev.441.nupkg.sha512",
+    "C:\\Users\\iosuc\\.nuget\\packages\\uno.ui\\3.2.0-dev.443\\uno.ui.3.2.0-dev.443.nupkg.sha512",
     "C:\\Users\\iosuc\\.nuget\\packages\\win2d.uwp\\1.25.0\\win2d.uwp.1.25.0.nupkg.sha512"
   ],
   "logs": []

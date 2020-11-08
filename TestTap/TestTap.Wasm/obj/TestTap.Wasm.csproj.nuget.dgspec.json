@@ -77,23 +77,23 @@
             },
             "Uno.UI.Lottie": {
               "target": "Package",
-              "version": "[3.2.0-dev.241, )"
+              "version": "[3.2.0-dev.443, )"
             },
             "Uno.UI.RemoteControl": {
               "target": "Package",
-              "version": "[3.2.0-dev.241, )"
+              "version": "[3.2.0-dev.443, )"
             },
             "Uno.UI.WebAssembly": {
               "target": "Package",
-              "version": "[3.2.0-dev.241, )"
+              "version": "[3.2.0-dev.443, )"
             },
             "Uno.Wasm.Bootstrap": {
               "target": "Package",
-              "version": "[1.5.0-dev.57, )"
+              "version": "[2.0.0-dev.67, )"
             },
             "Uno.Wasm.Bootstrap.DevServer": {
               "target": "Package",
-              "version": "[1.5.0-dev.57, )"
+              "version": "[2.0.0-dev.67, )"
             }
           },
           "imports": [

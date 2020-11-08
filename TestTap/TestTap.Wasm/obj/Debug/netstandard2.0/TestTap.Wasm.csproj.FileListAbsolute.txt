@@ -122,6 +122,7 @@ C:\MSP\2018\Uno\Git\TestTap\TestTap.Wasm\bin\Debug\netstandard2.0\Uno.UI.Toolkit
 C:\MSP\2018\Uno\Git\TestTap\TestTap.Wasm\bin\Debug\netstandard2.0\Uno.UI.Wasm.pdb
 C:\MSP\2018\Uno\Git\TestTap\TestTap.Wasm\bin\Debug\netstandard2.0\Uno.Xaml.pdb
 C:\MSP\2018\Uno\Git\TestTap\TestTap.Wasm\bin\Debug\netstandard2.0\Uno.UI.RemoteControl.pdb
+C:\MSP\2018\Uno\Git\TestTap\TestTap.Wasm\bin\Debug\netstandard2.0\Uno.UI.Lottie.pdb
 C:\MSP\2018\Uno\Git\TestTap\TestTap.Wasm\bin\Debug\netstandard2.0\CommonServiceLocator.dll
 C:\MSP\2018\Uno\Git\TestTap\TestTap.Wasm\bin\Debug\netstandard2.0\Microsoft.Extensions.Configuration.Abstractions.dll
 C:\MSP\2018\Uno\Git\TestTap\TestTap.Wasm\bin\Debug\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
@@ -147,6 +148,7 @@ C:\MSP\2018\Uno\Git\TestTap\TestTap.Wasm\bin\Debug\netstandard2.0\ColorCode.UWP.
 C:\MSP\2018\Uno\Git\TestTap\TestTap.Wasm\bin\Debug\netstandard2.0\Uno.Core.dll
 C:\MSP\2018\Uno\Git\TestTap\TestTap.Wasm\bin\Debug\netstandard2.0\Uno.Diagnostics.Eventing.dll
 C:\MSP\2018\Uno\Git\TestTap\TestTap.Wasm\bin\Debug\netstandard2.0\Uno.Foundation.Runtime.WebAssembly.dll
+C:\MSP\2018\Uno\Git\TestTap\TestTap.Wasm\bin\Debug\netstandard2.0\Uno.Material.dll
 C:\MSP\2018\Uno\Git\TestTap\TestTap.Wasm\bin\Debug\netstandard2.0\Microsoft.Toolkit.dll
 C:\MSP\2018\Uno\Git\TestTap\TestTap.Wasm\bin\Debug\netstandard2.0\Microsoft.Toolkit.Parsers.dll
 C:\MSP\2018\Uno\Git\TestTap\TestTap.Wasm\bin\Debug\netstandard2.0\Microsoft.Toolkit.Uwp.dll
@@ -165,6 +167,7 @@ C:\MSP\2018\Uno\Git\TestTap\TestTap.Wasm\bin\Debug\netstandard2.0\Uno.UI.Toolkit
 C:\MSP\2018\Uno\Git\TestTap\TestTap.Wasm\bin\Debug\netstandard2.0\Uno.UI.Wasm.dll
 C:\MSP\2018\Uno\Git\TestTap\TestTap.Wasm\bin\Debug\netstandard2.0\Uno.Xaml.dll
 C:\MSP\2018\Uno\Git\TestTap\TestTap.Wasm\bin\Debug\netstandard2.0\Uno.UI.RemoteControl.dll
+C:\MSP\2018\Uno\Git\TestTap\TestTap.Wasm\bin\Debug\netstandard2.0\Uno.UI.Lottie.dll
 C:\MSP\2018\Uno\Git\TestTap\TestTap.Wasm\obj\Debug\netstandard2.0\TestTap.Wasm.csprojAssemblyReference.cache
 C:\MSP\2018\Uno\Git\TestTap\TestTap.Wasm\obj\Debug\netstandard2.0\TestTap.Wasm.AssemblyInfoInputs.cache
 C:\MSP\2018\Uno\Git\TestTap\TestTap.Wasm\obj\Debug\netstandard2.0\TestTap.Wasm.AssemblyInfo.cs
@@ -172,6 +175,3 @@ C:\MSP\2018\Uno\Git\TestTap\TestTap.Wasm\obj\Debug\netstandard2.0\TestTap.Wasm.c
 C:\MSP\2018\Uno\Git\TestTap\TestTap.Wasm\obj\Debug\netstandard2.0\TestTap.Wasm.csproj.CopyComplete
 C:\MSP\2018\Uno\Git\TestTap\TestTap.Wasm\obj\Debug\netstandard2.0\TestTap.Wasm.dll
 C:\MSP\2018\Uno\Git\TestTap\TestTap.Wasm\obj\Debug\netstandard2.0\TestTap.Wasm.pdb
-C:\MSP\2018\Uno\Git\TestTap\TestTap.Wasm\bin\Debug\netstandard2.0\Uno.UI.Lottie.pdb
-C:\MSP\2018\Uno\Git\TestTap\TestTap.Wasm\bin\Debug\netstandard2.0\Uno.Material.dll
-C:\MSP\2018\Uno\Git\TestTap\TestTap.Wasm\bin\Debug\netstandard2.0\Uno.UI.Lottie.dll

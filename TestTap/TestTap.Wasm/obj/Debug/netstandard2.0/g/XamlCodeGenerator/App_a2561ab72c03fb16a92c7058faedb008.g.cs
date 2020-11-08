@@ -52,8 +52,8 @@ namespace TestTap
 			global::Uno.Foundation.Extensibility.ApiExtensibility.Register(typeof(global::Microsoft.UI.Xaml.Controls.ILottieVisualSourceProvider), o => new global::Uno.UI.Lottie.LottieVisualSourceProvider(o));
 			global::Windows.ApplicationModel.Resources.ResourceLoader.DefaultLanguage = "en-US";
 			global::Windows.ApplicationModel.Resources.ResourceLoader.AddLookupAssembly(GetType().Assembly);
-			global::Windows.ApplicationModel.Resources.ResourceLoader.AddLookupAssembly(global::System.Reflection.Assembly.Load("Microsoft.Toolkit.Uwp.UI.Controls, Version=6.1.0.0, Culture=neutral, PublicKeyToken=4aff67a105548ee2"));
-			global::Windows.ApplicationModel.Resources.ResourceLoader.AddLookupAssembly(global::System.Reflection.Assembly.Load("Microsoft.Xaml.Interactions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"));
+			global::Windows.ApplicationModel.Resources.ResourceLoader.AddLookupAssembly(typeof(global::Microsoft.Toolkit.Uwp.UI.Controls.GlobalStaticResources).Assembly); /* Microsoft.Toolkit.Uwp.UI.Controls, Version=6.1.0.0, Culture=neutral, PublicKeyToken=4aff67a105548ee2 */
+			global::Windows.ApplicationModel.Resources.ResourceLoader.AddLookupAssembly(typeof(global::Microsoft.Xaml.Interactions.GlobalStaticResources).Assembly); /* Microsoft.Xaml.Interactions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null */
 			global::Windows.ApplicationModel.Resources.ResourceLoader.AddLookupAssembly(typeof(global::Windows.UI.Xaml.FrameworkElement).Assembly);
 
 			this

@@ -16,6 +16,9 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Animation;
 using TestTap.Wasm;
 
+#if __WASM__
+
+#endif
 namespace TestTap.Wasm
 {
 	/// <summary>

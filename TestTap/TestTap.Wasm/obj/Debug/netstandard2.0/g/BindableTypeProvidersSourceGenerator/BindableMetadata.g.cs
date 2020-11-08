@@ -835,7 +835,6 @@ namespace TestTap.Wasm
 			}
 			bindableType.AddProperty("DesiredSize", typeof(global::Windows.Foundation.Size), GetDesiredSize);
 			bindableType.AddProperty("RenderSize", typeof(global::Windows.Foundation.Size), GetRenderSize);
-			bindableType.AddProperty("XamlRoot", typeof(global::Windows.UI.Xaml.XamlRoot), GetXamlRoot, SetXamlRoot);
 			bindableType.AddProperty("ActualOffset", typeof(global::System.Numerics.Vector3), GetActualOffset);
 			bindableType.AddProperty("ActualSize", typeof(global::System.Numerics.Vector2), GetActualSize);
 			bindableType.AddProperty("UIContext", typeof(global::Windows.UI.UIContext), GetUIContext);
@@ -849,6 +848,7 @@ namespace TestTap.Wasm
 			bindableType.AddProperty("Rotation", typeof(float), GetRotation, SetRotation);
 			bindableType.AddProperty("Translation", typeof(global::System.Numerics.Vector3), GetTranslation, SetTranslation);
 			bindableType.AddProperty("CenterPoint", typeof(global::System.Numerics.Vector3), GetCenterPoint, SetCenterPoint);
+			bindableType.AddProperty("XamlRoot", typeof(global::Windows.UI.Xaml.XamlRoot), GetXamlRoot, SetXamlRoot);
 			bindableType.AddProperty("KeyboardAccelerators", typeof(global::System.Collections.Generic.IList<global::Windows.UI.Xaml.Input.KeyboardAccelerator>), GetKeyboardAccelerators, SetKeyboardAccelerators);
 			bindableType.AddProperty("Handle", typeof(global::System.IntPtr), GetHandle);
 			bindableType.AddProperty("Name", typeof(string), GetName, SetName);
@@ -902,8 +902,6 @@ namespace TestTap.Wasm
 		private static object CreateInstance() => new global::Windows.UI.Xaml.UIElement();
 		private static object GetDesiredSize(object instance, Windows.UI.Xaml.DependencyPropertyValuePrecedences? precedence) => ((global::Windows.UI.Xaml.UIElement)instance).DesiredSize;
 		private static object GetRenderSize(object instance, Windows.UI.Xaml.DependencyPropertyValuePrecedences? precedence) => ((global::Windows.UI.Xaml.UIElement)instance).RenderSize;
-		private static object GetXamlRoot(object instance,  Windows.UI.Xaml.DependencyPropertyValuePrecedences? precedence) => ((global::Windows.UI.Xaml.UIElement)instance).XamlRoot;
-		private static void SetXamlRoot(object instance, object value, Windows.UI.Xaml.DependencyPropertyValuePrecedences? precedence) => ((global::Windows.UI.Xaml.UIElement)instance).XamlRoot = (global::Windows.UI.Xaml.XamlRoot)value;
 		private static object GetActualOffset(object instance, Windows.UI.Xaml.DependencyPropertyValuePrecedences? precedence) => ((global::Windows.UI.Xaml.UIElement)instance).ActualOffset;
 		private static object GetActualSize(object instance, Windows.UI.Xaml.DependencyPropertyValuePrecedences? precedence) => ((global::Windows.UI.Xaml.UIElement)instance).ActualSize;
 		private static object GetUIContext(object instance, Windows.UI.Xaml.DependencyPropertyValuePrecedences? precedence) => ((global::Windows.UI.Xaml.UIElement)instance).UIContext;
@@ -963,6 +961,8 @@ namespace TestTap.Wasm
 				((global::Windows.UI.Xaml.UIElement)instance).CenterPoint = (global::System.Numerics.Vector3)value;
 			}
 		}
+		private static object GetXamlRoot(object instance,  Windows.UI.Xaml.DependencyPropertyValuePrecedences? precedence) => ((global::Windows.UI.Xaml.UIElement)instance).XamlRoot;
+		private static void SetXamlRoot(object instance, object value, Windows.UI.Xaml.DependencyPropertyValuePrecedences? precedence) => ((global::Windows.UI.Xaml.UIElement)instance).XamlRoot = (global::Windows.UI.Xaml.XamlRoot)value;
 		private static object GetKeyboardAccelerators(object instance,  Windows.UI.Xaml.DependencyPropertyValuePrecedences? precedence) => ((global::Windows.UI.Xaml.UIElement)instance).KeyboardAccelerators;
 		private static void SetKeyboardAccelerators(object instance, object value, Windows.UI.Xaml.DependencyPropertyValuePrecedences? precedence) => ((global::Windows.UI.Xaml.UIElement)instance).KeyboardAccelerators = (global::System.Collections.Generic.IList<global::Windows.UI.Xaml.Input.KeyboardAccelerator>)value;
 		private static object GetHandle(object instance, Windows.UI.Xaml.DependencyPropertyValuePrecedences? precedence) => ((global::Windows.UI.Xaml.UIElement)instance).Handle;

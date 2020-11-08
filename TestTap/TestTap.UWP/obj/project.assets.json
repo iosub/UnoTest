@@ -1274,7 +1274,7 @@
           "build/netstandard1.0/Uno.SourceGenerationTasks.targets": {}
         }
       },
-      "Uno.UI/3.2.0-dev.441": {
+      "Uno.UI/3.2.0-dev.443": {
         "type": "package",
         "dependencies": {
           "System.Memory": "4.5.2",
@@ -2980,7 +2980,7 @@
           "build/netstandard1.0/Uno.SourceGenerationTasks.targets": {}
         }
       },
-      "Uno.UI/3.2.0-dev.441": {
+      "Uno.UI/3.2.0-dev.443": {
         "type": "package",
         "dependencies": {
           "System.Memory": "4.5.2",
@@ -4702,7 +4702,7 @@
           "build/netstandard1.0/Uno.SourceGenerationTasks.targets": {}
         }
       },
-      "Uno.UI/3.2.0-dev.441": {
+      "Uno.UI/3.2.0-dev.443": {
         "type": "package",
         "dependencies": {
           "System.Memory": "4.5.2",
@@ -6424,7 +6424,7 @@
           "build/netstandard1.0/Uno.SourceGenerationTasks.targets": {}
         }
       },
-      "Uno.UI/3.2.0-dev.441": {
+      "Uno.UI/3.2.0-dev.443": {
         "type": "package",
         "dependencies": {
           "System.Memory": "4.5.2",
@@ -8115,7 +8115,7 @@
           "build/netstandard1.0/Uno.SourceGenerationTasks.targets": {}
         }
       },
-      "Uno.UI/3.2.0-dev.441": {
+      "Uno.UI/3.2.0-dev.443": {
         "type": "package",
         "dependencies": {
           "System.Memory": "4.5.2",
@@ -9837,7 +9837,7 @@
           "build/netstandard1.0/Uno.SourceGenerationTasks.targets": {}
         }
       },
-      "Uno.UI/3.2.0-dev.441": {
+      "Uno.UI/3.2.0-dev.443": {
         "type": "package",
         "dependencies": {
           "System.Memory": "4.5.2",
@@ -11528,7 +11528,7 @@
           "build/netstandard1.0/Uno.SourceGenerationTasks.targets": {}
         }
       },
-      "Uno.UI/3.2.0-dev.441": {
+      "Uno.UI/3.2.0-dev.443": {
         "type": "package",
         "dependencies": {
           "System.Memory": "4.5.2",
@@ -13250,7 +13250,7 @@
           "build/netstandard1.0/Uno.SourceGenerationTasks.targets": {}
         }
       },
-      "Uno.UI/3.2.0-dev.441": {
+      "Uno.UI/3.2.0-dev.443": {
         "type": "package",
         "dependencies": {
           "System.Memory": "4.5.2",
@@ -21894,10 +21894,10 @@
         "uno.sourcegenerationtasks.nuspec"
       ]
     },
-    "Uno.UI/3.2.0-dev.441": {
-      "sha512": "puPTq5fjA2Gqk42v/0xx3RYQyVU03gD0DwLLAfxtHX0+E4XfclH/1wu6y1SBI2KIhEKJkAqxtmtOFmz/oQdzuw==",
+    "Uno.UI/3.2.0-dev.443": {
+      "sha512": "bS12tuqi0Cr+nfNJfrxxcPFjoBaVIeKn8b2MYhnAgkBiGjIKHjoxRWHm4t07FKLSsrIq9qJ0W+T34Ibtja/y1Q==",
       "type": "package",
-      "path": "uno.ui/3.2.0-dev.441",
+      "path": "uno.ui/3.2.0-dev.443",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -21938,8 +21938,8 @@
         "buildTransitive/Uno.UI.Tasks/System.Runtime.CompilerServices.Unsafe.dll",
         "buildTransitive/Uno.UI.Tasks/System.Threading.dll",
         "buildTransitive/Uno.UI.Tasks/Uno.Core.dll",
-        "buildTransitive/Uno.UI.Tasks/Uno.UI.Tasks.vd57b9addd95989bacdf98b61ef1ddde9365800f9.dll",
-        "buildTransitive/Uno.UI.Tasks/Uno.UI.Tasks.vd57b9addd95989bacdf98b61ef1ddde9365800f9.pdb",
+        "buildTransitive/Uno.UI.Tasks/Uno.UI.Tasks.va9091f997d5b294562bf3b656cd687f444d2f0a9.dll",
+        "buildTransitive/Uno.UI.Tasks/Uno.UI.Tasks.va9091f997d5b294562bf3b656cd687f444d2f0a9.pdb",
         "buildTransitive/netstandard2.0/Uno.UI.Tasks.targets",
         "buildTransitive/netstandard2.0/Uno.UI.targets",
         "buildTransitive/netstandard2.0/uno.winui.cross-runtime.targets",
@@ -22055,7 +22055,7 @@
         "uno-runtime/webassembly/Uno.Xaml.pdb",
         "uno-runtime/webassembly/Uno.dll",
         "uno-runtime/webassembly/Uno.pdb",
-        "uno.ui.3.2.0-dev.441.nupkg.sha512",
+        "uno.ui.3.2.0-dev.443.nupkg.sha512",
         "uno.ui.nuspec"
       ]
     },
@@ -22097,7 +22097,7 @@
       "Uno.Core >= 2.0.0",
       "Uno.Microsoft.Toolkit.Uwp >= 6.1.0-build.191.gc988bdd4ff",
       "Uno.Microsoft.Toolkit.Uwp.UI.Controls >= 6.1.0-build.191.gc988bdd4ff",
-      "Uno.UI >= 3.2.0-dev.441"
+      "Uno.UI >= 3.2.0-dev.443"
     ]
   },
   "packageFolders": {
@@ -22170,7 +22170,7 @@
           },
           "Uno.UI": {
             "target": "Package",
-            "version": "[3.2.0-dev.441, )"
+            "version": "[3.2.0-dev.443, )"
           }
         },
         "imports": [
