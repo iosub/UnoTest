@@ -77,18 +77,18 @@
             </PivotItem>
         </Pivot>-->
         <Grid>
-            <controls:TabView
+            <Pivot
                 x:Name="tabs"
                 Grid.Row="0"
-                CanCloseTabs="True"
-                IsSwipeEnabled="True">
-                <controls:TabViewItem x:Name="t1" Header="t1">
+                
+                >
+                <PivotItem x:Name="t1" Header="t1">
                     <ListView
                         x:Name="ListTUx"
                         ItemTemplate="{StaticResource ListViewItemTemplate1}"
                         ItemsSource="{Binding TestList}" />
-                </controls:TabViewItem>
-                <controls:TabViewItem x:Name="t2" Header="t2">
+                </PivotItem>
+                <PivotItem x:Name="t2" Header="t2">
                     <ListView
                         x:Name="ListT2Ux"
                           ItemContainerStyle="{StaticResource EvItemContainerStyle}"
@@ -100,8 +100,8 @@
                             </DataTemplate>
                         </ListView.ItemTemplate>
                     </ListView>
-                </controls:TabViewItem>
-            </controls:TabView>
+                </PivotItem>
+            </Pivot>
         </Grid>
         <Frame
             Name="TaskAndSe"

@@ -152,22 +152,20 @@ namespace TestTap
 						// Source ..\..\..\..\..\..\..\TestTap.Shared\MainPage.xaml (Line 79:10)
 						Children = 
 						{
-							new global::Microsoft.Toolkit.Uwp.UI.Controls.TabView
+							new global::Windows.UI.Xaml.Controls.Pivot
 							{
 								IsParsing = true
 								,
 								Name = "tabs",
-								CanCloseTabs = true/* bool/, True, TabView/CanCloseTabs */,
-								IsSwipeEnabled = true/* bool/, True, TabView/IsSwipeEnabled */,
 								// Source ..\..\..\..\..\..\..\TestTap.Shared\MainPage.xaml (Line 80:14)
 								Items = 
 								{
-									new global::Microsoft.Toolkit.Uwp.UI.Controls.TabViewItem
+									new global::Windows.UI.Xaml.Controls.PivotItem
 									{
 										IsParsing = true
 										,
 										Name = "t1",
-										Header = @"t1"/* object/, t1, TabViewItem/Header */,
+										Header = @"t1"/* object/, t1, PivotItem/Header */,
 										// Source ..\..\..\..\..\..\..\TestTap.Shared\MainPage.xaml (Line 85:18)
 										Content = 
 										new global::Windows.UI.Xaml.Controls.ListView
@@ -199,12 +197,12 @@ namespace TestTap
 									}
 									))
 									,
-									new global::Microsoft.Toolkit.Uwp.UI.Controls.TabViewItem
+									new global::Windows.UI.Xaml.Controls.PivotItem
 									{
 										IsParsing = true
 										,
 										Name = "t2",
-										Header = @"t2"/* object/, t2, TabViewItem/Header */,
+										Header = @"t2"/* object/, t2, PivotItem/Header */,
 										// Source ..\..\..\..\..\..\..\TestTap.Shared\MainPage.xaml (Line 91:18)
 										Content = 
 										new global::Windows.UI.Xaml.Controls.ListView
@@ -542,11 +540,11 @@ namespace TestTap
 			}
 		}
 		private global::Windows.UI.Xaml.Data.ElementNameSubject _t1Subject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
-		private global::Microsoft.Toolkit.Uwp.UI.Controls.TabViewItem t1
+		private global::Windows.UI.Xaml.Controls.PivotItem t1
 		{
 			get
 			{
-				return (global::Microsoft.Toolkit.Uwp.UI.Controls.TabViewItem)_t1Subject.ElementInstance;
+				return (global::Windows.UI.Xaml.Controls.PivotItem)_t1Subject.ElementInstance;
 			}
 			set
 			{
@@ -566,11 +564,11 @@ namespace TestTap
 			}
 		}
 		private global::Windows.UI.Xaml.Data.ElementNameSubject _t2Subject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
-		private global::Microsoft.Toolkit.Uwp.UI.Controls.TabViewItem t2
+		private global::Windows.UI.Xaml.Controls.PivotItem t2
 		{
 			get
 			{
-				return (global::Microsoft.Toolkit.Uwp.UI.Controls.TabViewItem)_t2Subject.ElementInstance;
+				return (global::Windows.UI.Xaml.Controls.PivotItem)_t2Subject.ElementInstance;
 			}
 			set
 			{
@@ -578,11 +576,11 @@ namespace TestTap
 			}
 		}
 		private global::Windows.UI.Xaml.Data.ElementNameSubject _tabsSubject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
-		private global::Microsoft.Toolkit.Uwp.UI.Controls.TabView tabs
+		private global::Windows.UI.Xaml.Controls.Pivot tabs
 		{
 			get
 			{
-				return (global::Microsoft.Toolkit.Uwp.UI.Controls.TabView)_tabsSubject.ElementInstance;
+				return (global::Windows.UI.Xaml.Controls.Pivot)_tabsSubject.ElementInstance;
 			}
 			set
 			{
@@ -944,16 +942,16 @@ namespace TestTap.Wasm
 			handler(instance);
 			return instance;
 		}
-		public delegate void XamlApplyHandler4(global::Microsoft.Toolkit.Uwp.UI.Controls.TabViewItem instance);
+		public delegate void XamlApplyHandler4(global::Windows.UI.Xaml.Controls.PivotItem instance);
 		[System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
-		public static global::Microsoft.Toolkit.Uwp.UI.Controls.TabViewItem MainPage_e7e2a5be20f8f556339963c59d5c8580_XamlApply(this global::Microsoft.Toolkit.Uwp.UI.Controls.TabViewItem instance, XamlApplyHandler4 handler)
+		public static global::Windows.UI.Xaml.Controls.PivotItem MainPage_e7e2a5be20f8f556339963c59d5c8580_XamlApply(this global::Windows.UI.Xaml.Controls.PivotItem instance, XamlApplyHandler4 handler)
 		{
 			handler(instance);
 			return instance;
 		}
-		public delegate void XamlApplyHandler5(global::Microsoft.Toolkit.Uwp.UI.Controls.TabView instance);
+		public delegate void XamlApplyHandler5(global::Windows.UI.Xaml.Controls.Pivot instance);
 		[System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
-		public static global::Microsoft.Toolkit.Uwp.UI.Controls.TabView MainPage_e7e2a5be20f8f556339963c59d5c8580_XamlApply(this global::Microsoft.Toolkit.Uwp.UI.Controls.TabView instance, XamlApplyHandler5 handler)
+		public static global::Windows.UI.Xaml.Controls.Pivot MainPage_e7e2a5be20f8f556339963c59d5c8580_XamlApply(this global::Windows.UI.Xaml.Controls.Pivot instance, XamlApplyHandler5 handler)
 		{
 			handler(instance);
 			return instance;
